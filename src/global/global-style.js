@@ -46,6 +46,20 @@ const GlobalStyle = createGlobalStyle`
       max-width: 1280px;
       margin: 0 auto;
     }
+
+    &_banner {
+      margin-top: 12px;
+
+      @media screen and (min-width: 768px) {
+        margin-top: 38px;
+      }
+      @media screen and (min-width: 1024px) {
+        margin-top: 64px;
+      }
+      @media screen and (min-width: 1200px) {
+        margin-top: 80px;
+      }
+    }
   }
 `;
 
