@@ -12,3 +12,8 @@
   --light-grey: #b7b7b7;
   --blue: #4e5cff;
 }
+
+::selection {
+  color: var(--white);
+  background: var(--black);
+}
