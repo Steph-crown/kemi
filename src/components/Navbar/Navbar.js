@@ -1,11 +1,11 @@
 // Imports
 import React from "react";
 import { Link } from "react-router-dom";
-import { MenuButton, NavbarWrapper, NavL } from "./styles";
+import { LetsTalkButton, MenuButton, NavbarWrapper, NavL } from "./styles";
 import { svgs } from "../../assets/svgs";
 
 // Destructure imports
-const { MenuIcon, Logo } = svgs;
+const { MenuIcon, Logo, PenIcon } = svgs;
 
 const Navbar = () => {
   return (
@@ -23,6 +23,12 @@ const Navbar = () => {
         <MenuButton>
           <MenuIcon />
         </MenuButton>
+        <LetsTalkButton>
+          LET'S TALK
+          <span>
+            <PenIcon />
+          </span>
+        </LetsTalkButton>
       </section>
       <section className="nav__dropdown"></section>
     </NavbarWrapper>

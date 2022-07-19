@@ -6,7 +6,7 @@ const GlobalStyle = createGlobalStyle`
     border: none;
     box-sizing: border-box;
     margin: 0;
-    font-family: Neue, Helvetica, Arial, sans-serif;
+    font-family: var(--font-neue);
     font-size: 62.5%;
     transition: all 0.3s ease-in-out;
   }
