@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "Made";
+  src: url("MADE Outer Sans Black PERSONAL USE.otf");
+  src: local("MADE Outer Sans Black PERSONAL USE"),
+    url("MADE Outer Sans Black PERSONAL USE.otf") format("otf");
+  font-weight: 700;
+  font-style: normal;
+}
