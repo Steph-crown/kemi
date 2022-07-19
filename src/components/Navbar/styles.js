@@ -33,11 +33,15 @@ export const NavbarWrapper = styled.header`
       transform: translate(-50%, -50%);
       width: 100%;
       display: none;
-      align-items: center;
-      justify-content: center;
 
       @media screen and (min-width: 960px) {
-        display: flex;
+        display: block;
+
+        &-list {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
       }
     }
   }
@@ -49,18 +53,39 @@ export const MenuButton = styled.button`
   }
 `;
 
+export const NavListItem = styled.li`
+  margin: 0 16px;
+`;
+
 export const NavL = styled(NavLink).attrs({
   className: ({ isActive }) => (isActive ? "active" : ""),
 })`
-  font-weight: 400;
-  font-size: 1.6rem;
-  line-height: 2.4rem;
-  text-transform: uppercase;
-  margin: 0 16px;
-  font-family: var(--font-neue);
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
 
-  &.active {
-    color: red;
+  span {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    text-transform: uppercase;
+    font-family: var(--font-neue);
+    display: block;
+  }
+
+  .line {
+    position: relative;
+    left: -100%;
+    width: 100%;
+    border-top: 1px solid var(--body-black);
+  }
+
+  &:hover {
+    .line {
+      transform: translate3d(100%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+        rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+      transform-style: preserve-3d;
+    }
   }
 `;
 

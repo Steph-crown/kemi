@@ -22,6 +22,10 @@ const GlobalStyle = createGlobalStyle`
     outline: none;
   }
 
+  ul, li {
+    list-style: none;
+  }
+
   .container {
     width: 100%;
     padding: 0 16px;
