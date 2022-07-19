@@ -1,2 +1,14 @@
 :root {
+  /* fonts */
+  --font-made: "Made, Helvetica, Arial, sans-serif";
+  --font-neue: "Neue, Helvetica, Arial, sans-serif";
+
+  /* colors */
+  --green: #0ca34d;
+  --deep-green: #0da34e;
+  --black: #010101;
+  --white: #ffffff;
+  --body-black: #151515;
+  --light-grey: #b7b7b7;
+  --blue: #4e5cff;
 }
