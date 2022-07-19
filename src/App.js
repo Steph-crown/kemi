@@ -1,17 +1,13 @@
 import "./App.css";
+import GlobalStyle from "./global/global-style";
+import { AppRoutes } from "./routes";
 
 function App() {
   return (
-    <div
-      className="App"
-      style={{
-        fontFamily: "Made, serif",
-        fontWeight: "700",
-        fontSize: "40px",
-      }}
-    >
-      Yoo
-    </div>
+    <>
+      <AppRoutes />
+      <GlobalStyle />
+    </>
   );
 }
 
