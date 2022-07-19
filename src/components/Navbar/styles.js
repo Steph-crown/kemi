@@ -96,10 +96,12 @@ export const NavL = styled(NavLink).attrs({
     position: relative;
     left: -100%;
     width: 100%;
-    border-top: 1px solid var(--body-black);
+    border-top: 1px solid var(--green);
   }
 
-  &:hover {
+  &:hover,
+  &.active {
+    color: var(--green);
     .line {
       transform: translate3d(100%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
         rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
