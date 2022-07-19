@@ -7,6 +7,7 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     margin: 0;
     font-family: Neue, Helvetica, Arial, sans-serif;
+    font-size: 62.5%;
   }
 
   a {

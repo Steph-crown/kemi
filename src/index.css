@@ -1,7 +1,7 @@
 :root {
   /* fonts */
-  --font-made: "Made, Helvetica, Arial, sans-serif";
-  --font-neue: "Neue, Helvetica, Arial, sans-serif";
+  --font-made: Made, Helvetica, Arial, sans-serif;
+  --font-neue: Neue, Helvetica, Arial, sans-serif;
 
   /* colors */
   --green: #0ca34d;
