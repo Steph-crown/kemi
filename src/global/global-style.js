@@ -8,6 +8,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     font-family: Neue, Helvetica, Arial, sans-serif;
     font-size: 62.5%;
+    transition: all 0.3s ease-in-out;
   }
 
   a {
