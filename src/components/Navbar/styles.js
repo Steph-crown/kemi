@@ -19,12 +19,21 @@ export const NavbarWrapper = styled.header`
       @media screen and (min-width: 1280px) {
         padding: 32px 0;
       }
+
+      .home {
+        position: relative;
+        z-index: 2;
+      }
     }
   }
 
   .nav {
     &__logo {
       height: 24px;
+
+      &:hover {
+        transform: scale(1.5);
+      }
     }
     &__nav {
       position: absolute;
@@ -90,18 +99,35 @@ export const NavL = styled(NavLink).attrs({
 `;
 
 export const LetsTalkButton = styled.button`
-  font-weight: 400;
-  font-size: 1.6rem;
-  line-height: 2.4rem;
-  color: var(--green);
   align-items: center;
   display: none;
+  position: relative;
+  z-index: 2;
 
   @media screen and (min-width: 960px) {
     display: flex;
+    cursor: pointer;
+    justify-content: space-between;
+
+    .label {
+      opacity: 1;
+      transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg)
+        rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+      transform-style: preserve-3d;
+      font-weight: 400;
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+      color: var(--green);
+    }
+
+    &:hover {
+      .icon {
+        transform: scale(1.4);
+      }
+    }
   }
 
-  span {
+  .icon {
     width: 50px;
     height: 50px;
     background: var(--green);
