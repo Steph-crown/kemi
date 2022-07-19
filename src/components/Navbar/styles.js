@@ -2,38 +2,48 @@ import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 export const NavbarWrapper = styled.header`
+  position: relative;
   .container {
-    &__sub {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 16px 0;
+  }
+  .subb {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0;
+    position: relative;
+
+    @media screen and (min-width: 768px) {
+      padding: 20px 0;
+    }
+    @media screen and (min-width: 1024px) {
+      padding: 24px 0;
+    }
+    @media screen and (min-width: 1280px) {
+      padding: 32px 0;
+    }
+
+    .home {
       position: relative;
-
-      @media screen and (min-width: 768px) {
-        padding: 20px 0;
-      }
-      @media screen and (min-width: 1024px) {
-        padding: 24px 0;
-      }
-      @media screen and (min-width: 1280px) {
-        padding: 32px 0;
-      }
-
-      .home {
-        position: relative;
-        z-index: 2;
-      }
+      z-index: 2;
     }
   }
 
   .nav {
     &__logo {
       height: 24px;
+      width: 24px;
 
       &:hover {
         transform: scale(1.5);
       }
+    }
+    &__buttons {
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      position: relative;
+      width: 200px;
+      justify-content: flex-end;
     }
     &__nav {
       position: absolute;
@@ -136,5 +146,58 @@ export const LetsTalkButton = styled.button`
     justify-content: center;
     align-items: center;
     margin-left: 12px;
+  }
+`;
+
+export const NavDropdown = styled.section.attrs({
+  className: "container_sub",
+})`
+  width: 100%;
+  position: absolute;
+  background: var(--white);
+  &.open {
+    transform: translate3d(0px, 150vh, 0px) scale3d(1, 1, 1) rotateX(0deg)
+      rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+
+    li {
+      a {
+        transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg)
+          rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+        transform-style: preserve-3d;
+      }
+    }
+  }
+
+  ul {
+    margin-top: 64px;
+  }
+
+  li {
+    margin-bottom: 24px;
+  }
+`;
+
+export const MobileLetsTalkButton = styled.button`
+  @media screen and (min-width: 960px) {
+    display: none;
+  }
+  width: 42px;
+  height: 42px;
+  background: var(--green);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 12px;
+
+  position: absolute;
+  right: -200px;
+
+  &:hover {
+    transform: scale(1.4);
+  }
+  &.open {
+    right: 56px;
   }
 `;
