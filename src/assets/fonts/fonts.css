@@ -1,8 +1,83 @@
 @font-face {
   font-family: "Made";
-  src: url("MADE Outer Sans Black PERSONAL USE.otf");
   src: local("MADE Outer Sans Black PERSONAL USE"),
-    url("MADE Outer Sans Black PERSONAL USE.otf") format("otf");
+    url("./MADE Outer Sans Black PERSONAL USE.otf") format("opentype");
   font-weight: 700;
   font-style: normal;
+}
+@font-face {
+  font-family: "Made";
+  src: local("MADE Outer Sans Bold PERSONAL USE"),
+    url("./MADE Outer Sans Bold PERSONAL USE.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Made";
+  src: local("MADE Outer Sans Light PERSONAL USE"),
+    url("./MADE Outer Sans Light PERSONAL USE.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Made";
+  src: local("MADE Outer Sans Medium PERSONAL USE"),
+    url("./MADE Outer Sans Medium PERSONAL USE.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Made";
+  src: local("MADE Outer Sans Regular PERSONAL USE"),
+    url("./MADE Outer Sans Regular PERSONAL USE.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* NEUE */
+@font-face {
+  font-family: "Neue";
+  src: local("NeueHaasDisplayBlack"),
+    url("NeueHaasDisplayBlack.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Neue";
+  src: local("NeueHaasDisplayBold"),
+    url("NeueHaasDisplayBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Neue";
+  src: local("NeueHaasDisplayLight"),
+    url("NeueHaasDisplayLight.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Neue";
+  src: local("NeueHaasDisplayMediu"),
+    url("NeueHaasDisplayMediu.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Neue";
+  src: local("NeueHaasDisplayRoman"),
+    url("NeueHaasDisplayRoman.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Neue";
+  src: local("NeueHaasDisplayThin"),
+    url("NeueHaasDisplayThin.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+body {
+  background: yellow;
 }
