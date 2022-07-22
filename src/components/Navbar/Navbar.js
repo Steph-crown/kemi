@@ -74,7 +74,7 @@ const Navbar = () => {
           </LetsTalkButton>
         </section>
       </NavbarWrapper>
-      <NavDropdown className={!isOpen ? "open" : ""}>
+      <NavDropdown className={!isOpen ? "" : "open"}>
         <ul className="nav__nav-list">
           <NavListItem>
             <NavL to="/about">

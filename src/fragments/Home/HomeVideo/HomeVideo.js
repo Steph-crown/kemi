@@ -10,6 +10,9 @@ const HomeVideo = () => {
   return (
     <VideoWrapper>
       <img src={videoThumbnail} alt="Video Thumbnail" />
+      <button className="play-btn">
+        <PlayIcon />
+      </button>
     </VideoWrapper>
   );
 };
