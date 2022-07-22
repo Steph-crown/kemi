@@ -33,7 +33,7 @@ const Services = () => {
             </div>
             <ServicesSection>
               <div className="services__list">
-                <a className="services__list--item" href="/">
+                <a className="services__list--item m-2" href="/">
                   <header className="services__list--item__header">
                     <h2>Fintech</h2>
                     <button>
@@ -47,7 +47,7 @@ const Services = () => {
                     experience, we improve your business metrics.
                   </p>
                 </a>
-                <a className="services__list--item" href="/">
+                <a className="services__list--item m-8" href="/">
                   <header className="services__list--item__header">
                     <h2>E-commerce</h2>
                     <button>
@@ -63,7 +63,7 @@ const Services = () => {
                 </a>
               </div>
               <div className="services__list">
-                <a className="services__list--item" href="/">
+                <a className="services__list--item m-8" href="/">
                   <header className="services__list--item__header">
                     <h2>Blockchain</h2>
                     <button>
@@ -77,7 +77,7 @@ const Services = () => {
                     experience, we improve your business metrics.
                   </p>
                 </a>
-                <a className="services__list--item" href="/">
+                <a className="services__list--item m-6" href="/">
                   <header className="services__list--item__header">
                     <h2>Logistics</h2>
                     <button>

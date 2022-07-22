@@ -105,34 +105,62 @@ export const Flex = styled.div`
 `;
 
 export const ServicesSection = styled.div`
-  .services {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: 880px) {
+    flex-direction: row;
+  }
+  & > * {
     @media screen and (min-width: 880px) {
-      flex-direction: row;
-    }
-    & > * {
-      @media screen and (min-width: 880px) {
-        width: 50%;
-        &:first-child {
-          border-right: 1px solid rgba(21, 21, 21, 0.15);
-        }
+      width: 50%;
+      &:first-child {
+        border-right: 1px solid rgba(21, 21, 21, 0.15);
       }
     }
-
+  }
+  .services {
     &__list {
       &--item {
+        display: block;
         &__header {
           display: flex;
           justify-content: space-between;
           align-items: center;
           padding-bottom: 24px;
           border-bottom: 1px solid rgba(21, 21, 21, 0.15);
+          @media screen and (min-width: 880px) {
+            padding-left: 40px;
+            padding-right: 24px;
+          }
+          @media screen and (min-width: 1024px) {
+            padding-left: 64px;
+            padding-right: 32px;
+          }
+          @media screen and (min-width: 1200px) {
+            padding-left: 78px;
+            padding-right: 40px;
+          }
 
           h2 {
             font-weight: 500;
-            font-size: 2rem;
-            line-height: 2.4rem;
+            font-size: 2.5rem;
+            line-height: 3.5rem;
+            @media screen and (min-width: 880px) {
+              font-size: 3rem;
+              line-height: 4rem;
+            }
+            @media screen and (min-width: 1024px) {
+              font-size: 3.5rem;
+              line-height: 4.5rem;
+            }
+            @media screen and (min-width: 1200px) {
+              font-size: 4rem;
+              line-height: 5rem;
+            }
+            @media screen and (min-width: 1320px) {
+              font-size: 4.5rem;
+              line-height: 5.5rem;
+            }
             color: var(--black);
           }
         }
@@ -143,8 +171,35 @@ export const ServicesSection = styled.div`
           font-weight: 400;
           font-size: 1.4rem;
           line-height: 2.4rem;
+
+          @media screen and (min-width: 880px) {
+            padding-left: 40px;
+            padding-right: 14px;
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+          }
+          @media screen and (min-width: 1024px) {
+            padding-left: 64px;
+            padding-right: 22px;
+          }
+          @media screen and (min-width: 1200px) {
+            padding-left: 78px;
+            padding-right: 28px;
+          }
         }
       }
+    }
+  }
+
+  @media screen and (min-width: 880px) {
+    .m-2 {
+      margin-top: 32px;
+    }
+    .m-8 {
+      margin-top: 248px;
+    }
+    .m-6 {
+      margin-top: 200px;
     }
   }
 `;
