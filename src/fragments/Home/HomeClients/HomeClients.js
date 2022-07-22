@@ -8,7 +8,7 @@ import { pngs } from "../../../assets/pngs";
 const {
   Buttons: { ArrowButton },
 } = Components;
-const { QuoteIcon } = svgs;
+const { QuoteIcon, ArrowIcon } = svgs;
 const { avatar } = pngs;
 
 const HomeClients = () => {
@@ -17,6 +17,14 @@ const HomeClients = () => {
       <section className="container__sub container__banner">
         <header>
           <h1>MY CLIENTS</h1>
+          <aside className="slider-btns md-flex">
+            <button>
+              <ArrowIcon />
+            </button>
+            <button>
+              <ArrowIcon />
+            </button>
+          </aside>
         </header>
         <Flex>
           <div className="about">

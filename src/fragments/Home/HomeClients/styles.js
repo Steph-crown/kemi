@@ -5,6 +5,9 @@ export const HomeClientsWrapper = styled.section.attrs({
 })`
   background-color: var(--body-black);
   padding-bottom: 40px;
+  @media screen and (min-width: 880px) {
+    padding-bottom: 0;
+  }
   .container {
     &__banner {
     }
@@ -72,6 +75,7 @@ export const HomeClientsWrapper = styled.section.attrs({
     display: flex;
     padding-top: 60px;
     padding-bottom: 24px;
+    justify-content: space-between;
 
     h1 {
       font-weight: 500;
@@ -79,6 +83,42 @@ export const HomeClientsWrapper = styled.section.attrs({
       line-height: 2.8rem;
       color: var(--white);
       font-family: var(--font-made);
+      max-width: 648px;
+
+      @media screen and (min-width: 880px) {
+        font-weight: 600;
+        font-size: 7rem;
+        line-height: 9rem;
+      }
+      @media screen and (min-width: 1024px) {
+        font-size: 9rem;
+        line-height: 11rem;
+      }
+      @media screen and (min-width: 1200px) {
+        font-weight: 700;
+        font-size: 11rem;
+        line-height: 13rem;
+      }
+    }
+
+    .slider-btns {
+      margin-bottom: -24px;
+      button {
+        border-left: 1px solid rgba(183, 183, 183, 0.4);
+        padding: 60px 90px;
+        display: flex;
+        align-items: flex-end;
+
+        svg {
+          height: 40px;
+        }
+
+        &:last-child {
+          svg {
+            transform: rotate(180deg);
+          }
+        }
+      }
     }
   }
 
@@ -91,12 +131,34 @@ export const HomeClientsWrapper = styled.section.attrs({
         flex: 1 0 auto;
         height: 24px;
         margin-right: 2px;
+
+        @media screen and (min-width: 880px) {
+          height: 32px;
+          width: 40px;
+        }
+        @media screen and (min-width: 1024px) {
+          height: 40px;
+          width: 40px;
+        }
       }
       p {
         color: var(--white);
         font-weight: 400;
         font-size: 1.4rem;
         line-height: 2.6rem;
+
+        @media screen and (min-width: 880px) {
+          font-size: 1.8rem;
+          line-height: 2.8rem;
+        }
+        @media screen and (min-width: 1024px) {
+          font-size: 2.2rem;
+          line-height: 2.4rem;
+        }
+        @media screen and (min-width: 1200px) {
+          font-size: 2.4rem;
+          line-height: 4rem;
+        }
       }
     }
     &__profile {
@@ -106,13 +168,38 @@ export const HomeClientsWrapper = styled.section.attrs({
       align-items: flex-end;
       margin-bottom: 42px;
 
+      @media screen and (min-width: 880px) {
+        margin-top: 40px;
+        margin-bottom: 24px;
+      }
+      @media screen and (min-width: 1024px) {
+        margin-top: 50px;
+        margin-bottom: 60px;
+        align-items: center;
+      }
+      @media screen and (min-width: 1200px) {
+        margin-top: 62px;
+        margin-bottom: 87px;
+      }
+
       img {
         height: 40px;
+
+        @media screen and (min-width: 880px) {
+          height: 80px;
+        }
+        @media screen and (min-width: 1024px) {
+          height: 120px;
+        }
+        @media screen and (min-width: 1200px) {
+          height: 150px;
+        }
       }
 
       p {
         text-transform: uppercase;
         color: var(--white);
+        font-size: 1.4rem;
       }
     }
   }

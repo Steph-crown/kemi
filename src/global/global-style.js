@@ -68,6 +68,12 @@ const GlobalStyle = createGlobalStyle`
       display: none !important;
     }
   }
+  .md-flex {
+    display: none !important;
+    @media screen and (min-width: 880px) {
+      display: flex !important;
+    }
+  }
 `;
 
 export default GlobalStyle;
