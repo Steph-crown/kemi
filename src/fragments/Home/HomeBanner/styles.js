@@ -106,6 +106,12 @@ export const PenButtonIcon = styled.button`
   align-items: center;
   justify-content: center;
   background: var(--green);
+  cursor: pointer;
+
+  &:hover {
+    background: var(--blue);
+    transform: scale3d(0.9, 0.6, 1.2);
+  }
 
   @media screen and (min-width: 768px) {
     width: 55px;
