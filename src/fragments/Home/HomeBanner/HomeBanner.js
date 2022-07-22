@@ -9,7 +9,7 @@ const HomeBanner = () => {
   return (
     <BannerWrapper>
       <section className="container__sub container_banner">
-        <Flex>
+        <Flex className="banner__flex">
           <div>
             <BannerHeaderText>
               <span>P</span>
@@ -28,7 +28,7 @@ const HomeBanner = () => {
             </BannerHeaderText>
           </div>
         </Flex>
-        <Flex>
+        <Flex className="banner__flex">
           <div>
             <BannerHeaderText>
               <span>D</span>
@@ -40,7 +40,7 @@ const HomeBanner = () => {
             </BannerHeaderText>
           </div>
         </Flex>
-        <Flex>
+        <Flex className="banner__flex">
           <div>
             <BannerHeaderText>
               <span>m</span>
@@ -52,6 +52,10 @@ const HomeBanner = () => {
               <span>r</span>
             </BannerHeaderText>
           </div>
+          <p>
+            I create engaging user experience design for brands and startups by
+            balancing the business needs and the user's needs.
+          </p>
         </Flex>
       </section>
     </BannerWrapper>

@@ -8,6 +8,57 @@ export const Flex = styled.div`
   display: flex;
   align-items: center;
   position: relative;
+  margin-bottom: 14px;
+
+  &.banner__flex {
+    will-change: transform;
+    transform: translate3d(0%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+      rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+
+    p {
+      font-weight: 400;
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+      color: var(--body-black);
+      margin-left: 18px;
+    }
+
+    @media screen and (min-width: 560px) {
+      &:nth-child(1),
+      &:nth-child(3) {
+        margin-left: 96px;
+      }
+    }
+
+    @media screen and (min-width: 780px) {
+      &:nth-child(1),
+      &:nth-child(3) {
+        margin-left: 120px;
+      }
+    }
+
+    @media screen and (min-width: 1024px) {
+      &:nth-child(1),
+      &:nth-child(3) {
+        margin-left: 180px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 780px) {
+    &:nth-child(3) {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      p {
+        max-width: 380px;
+        margin-left: 0;
+        margin-top: 14px;
+      }
+    }
+  }
 `;
 
 export const TextFlex = styled.div`
