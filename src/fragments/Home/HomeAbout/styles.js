@@ -31,7 +31,7 @@ export const HomeAboutWrapper = styled.section.attrs({
 
           button {
             margin: 0 auto;
-            display: block;
+            /* display: block; */
           }
         }
       }

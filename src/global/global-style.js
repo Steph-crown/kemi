@@ -20,6 +20,7 @@ const GlobalStyle = createGlobalStyle`
     border: none;
     background: none;
     outline: none;
+    cursor: pointer;
   }
 
   ul, li {
