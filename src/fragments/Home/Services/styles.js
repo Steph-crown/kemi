@@ -191,6 +191,10 @@ export const ServicesSection = styled.div`
     }
   }
 
+  .m-6 {
+    margin-bottom: 40px;
+  }
+
   @media screen and (min-width: 880px) {
     .m-2 {
       margin-top: 32px;
@@ -200,6 +204,7 @@ export const ServicesSection = styled.div`
     }
     .m-6 {
       margin-top: 200px;
+      margin-bottom: 100px;
     }
   }
 `;

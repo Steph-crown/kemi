@@ -14,6 +14,10 @@ export const ArrowButtonWrapper = styled.button`
   font-size: 1.4rem;
   line-height: 2.2rem;
 
+  &:hover {
+    background: ${({ hoverColor }) => (hoverColor || "#0CA34D")};
+  }
+
   svg {
     margin-left: 40px;
   }
