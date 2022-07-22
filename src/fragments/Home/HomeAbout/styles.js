@@ -21,7 +21,13 @@ export const HomeAboutWrapper = styled.section.attrs({
           width: 332px;
           flex: 1 0 auto;
           border-right: 1px solid rgba(21, 21, 21, 0.15);
-          padding-top: 40px;
+          padding-top: 32px;
+          @media screen and (min-width: 1024px) {
+            padding-top: 40px;
+          }
+          @media screen and (min-width: 1200px) {
+            padding-top: 44px;
+          }
 
           button {
             margin: 0 auto;
@@ -45,6 +51,11 @@ export const HomeAboutWrapper = styled.section.attrs({
     color: var(--light-grey);
     margin-bottom: 11px;
     display: block;
+
+    @media screen and (min-width: 880px) {
+      font-size: 1.6rem;
+      margin-bottom: 24px;
+    }
   }
 
   p {
@@ -52,6 +63,23 @@ export const HomeAboutWrapper = styled.section.attrs({
     font-size: 1.6rem;
     line-height: 2.8rem;
     color: var(--body-black);
+
+    @media screen and (min-width: 880px) {
+      font-size: 2.2rem;
+      line-height: 3.2rem;
+    }
+    @media screen and (min-width: 1024px) {
+      font-size: 2.76rem;
+      line-height: 4rem;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 3.3rem;
+      line-height: 4.8rem;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 3.8rem;
+      line-height: 5.8rem;
+    }
   }
 
   .btn-group {
@@ -59,6 +87,18 @@ export const HomeAboutWrapper = styled.section.attrs({
 
     @media screen and (min-width: 400px) {
       padding-top: 24px;
+    }
+  }
+
+  .about {
+    @media screen and (min-width: 880px) {
+      padding: 32px 40px;
+    }
+    @media screen and (min-width: 1024px) {
+      padding: 50px 64px;
+    }
+    @media screen and (min-width: 1200px) {
+      padding: 54px 78px;
     }
   }
 `;

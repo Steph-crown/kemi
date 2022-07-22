@@ -11,7 +11,7 @@ const HomeAbout = () => {
   return (
     <HomeAboutWrapper>
       <section className="container__sub container__banner">
-        <div>
+        <div className="about">
           <small>ABOUT ME</small>
           <p>
             I am a Product and UX Designer! I work at the intersection of
