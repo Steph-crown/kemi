@@ -8,7 +8,7 @@ export const Flex = styled.div`
   display: flex;
   align-items: center;
   position: relative;
-  margin-bottom: 14px;
+  /* margin-bottom: 14px; */
 
   &.banner__flex {
     will-change: transform;
