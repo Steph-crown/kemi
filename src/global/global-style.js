@@ -62,6 +62,12 @@ const GlobalStyle = createGlobalStyle`
       }
     }
   }
+
+  .md-hide {
+    @media screen and (min-width: 880px) {
+      display: none !important;
+    }
+  }
 `;
 
 export default GlobalStyle;

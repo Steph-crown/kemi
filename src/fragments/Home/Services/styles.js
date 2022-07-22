@@ -4,22 +4,6 @@ export const ServicesWrapper = styled.section.attrs({
   className: "container",
 })`
   .container {
-    /* &__banner {
-      margin-top: 32px;
-
-      @media screen and (min-width: 640px) {
-        margin-top: 56px;
-      }
-      @media screen and (min-width: 880px) {
-        margin-top: 72px;
-      }
-      @media screen and (min-width: 1024px) {
-        margin-top: 96px;
-      }
-      @media screen and (min-width: 1200px) {
-        margin-top: 106px;
-      }
-    } */
   }
 `;
 
@@ -61,35 +45,106 @@ export const Flex = styled.div`
       }
     }
   }
-`;
 
-export const ServicesHeaderText = styled.h1`
-  transform: translate3d(0rem, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
-    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-  transform-style: preserve-3d;
-  span {
-    font-weight: 600;
-    font-size: 4.5rem;
-    line-height: 5.7rem;
-    color: var(--black);
-    text-transform: uppercase;
-    font-family: var(--font-made);
-    transform: translate3d(0px, 0px, 0rem) scale3d(1, 1, 1) rotateX(0deg)
-      rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-    transform-style: preserve-3d;
-    opacity: 1;
-
-    @media screen and (min-width: 768px) {
-      font-size: 6rem;
-      line-height: 7.5rem;
+  .about {
+    @media screen and (min-width: 880px) {
+      padding: 32px 40px;
     }
     @media screen and (min-width: 1024px) {
-      font-size: 8rem;
-      line-height: 10rem;
+      padding: 50px 64px;
     }
-    @media screen and (min-width: 1280px) {
-      font-size: 11rem;
-      line-height: 13rem;
+    @media screen and (min-width: 1200px) {
+      padding: 54px 78px;
+    }
+    .md-hide {
+      margin-bottom: 32px;
+    }
+    small {
+      font-weight: 400;
+      font-size: 1.4rem;
+      line-height: 2.4rem;
+      color: var(--light-grey);
+      margin-bottom: 11px;
+      display: block;
+
+      @media screen and (min-width: 880px) {
+        font-size: 1.6rem;
+        margin-bottom: 24px;
+      }
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 1.6rem;
+      line-height: 2.8rem;
+      color: var(--body-black);
+      padding-bottom: 18px;
+
+      @media screen and (min-width: 880px) {
+        font-size: 2.2rem;
+        line-height: 3.2rem;
+        padding-bottom: 36px;
+      }
+      @media screen and (min-width: 1024px) {
+        font-size: 2.76rem;
+        line-height: 4rem;
+        padding-bottom: 45px;
+      }
+      @media screen and (min-width: 1200px) {
+        font-size: 3.3rem;
+        line-height: 4.8rem;
+        padding-bottom: 56px;
+      }
+      @media screen and (min-width: 1200px) {
+        font-size: 3.8rem;
+        line-height: 5.8rem;
+        padding-bottom: 64px;
+      }
+    }
+  }
+`;
+
+export const ServicesSection = styled.div`
+  .services {
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: 880px) {
+      flex-direction: row;
+    }
+    & > * {
+      @media screen and (min-width: 880px) {
+        width: 50%;
+        &:first-child {
+          border-right: 1px solid rgba(21, 21, 21, 0.15);
+        }
+      }
+    }
+
+    &__list {
+      &--item {
+        &__header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding-bottom: 24px;
+          border-bottom: 1px solid rgba(21, 21, 21, 0.15);
+
+          h2 {
+            font-weight: 500;
+            font-size: 2rem;
+            line-height: 2.4rem;
+            color: var(--black);
+          }
+        }
+
+        &__body {
+          margin-top: 24px;
+          margin-bottom: 16px;
+          font-weight: 400;
+          font-size: 1.4rem;
+          line-height: 2.4rem;
+        }
+      }
     }
   }
 `;

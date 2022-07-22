@@ -6,9 +6,14 @@ import { svgs } from "../../../assets/svgs";
 // Destructure imports
 const { ArrowIcon } = svgs;
 
-const ArrowButton = ({ children, themeColor, width, smFull }) => {
+const ArrowButton = ({ children, themeColor, width, smFull, className }) => {
   return (
-    <ArrowButtonWrapper themeColor={themeColor} width={width} smFull={smFull}>
+    <ArrowButtonWrapper
+      themeColor={themeColor}
+      width={width}
+      smFull={smFull}
+      className={className}
+    >
       {children}
       <ArrowIcon />
     </ArrowButtonWrapper>
