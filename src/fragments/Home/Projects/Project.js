@@ -39,6 +39,19 @@ const Wrapper = styled.a.attrs(({ link }) => ({
   padding-top: 40px;
   padding-bottom: 24px;
 
+  @media screen and (min-width: 880px) {
+    flex-direction: row-reverse;
+    padding-top: 0;
+    padding-bottom: 0;
+    &:first-child {
+      border-top: none;
+    }
+
+    & > * {
+      width: 100%;
+    }
+  }
+
   .proj {
     &__image {
       width: 100%;
@@ -49,10 +62,38 @@ const Wrapper = styled.a.attrs(({ link }) => ({
         border-radius: 5px;
         height: 240px;
       }
+
+      @media screen and (min-width: 880px) {
+        padding: 32px 24px;
+        img {
+          height: 320px;
+        }
+      }
+      @media screen and (min-width: 960px) {
+        padding: 46px 34px;
+        img {
+          height: 400px;
+        }
+      }
+      @media screen and (min-width: 1200px) {
+        img {
+          height: 504px;
+        }
+      }
     }
     &__content {
       display: flex;
       flex-direction: column;
+      justify-content: space-between;
+
+      @media screen and (min-width: 880px) {
+        padding: 32px 24px;
+        border-right: 1px solid rgba(21, 21, 21, 0.15);
+      }
+      @media screen and (min-width: 1024px) {
+        padding: 46px 34px;
+      }
+
       &--header {
         display: flex;
         justify-content: space-between;
@@ -60,11 +101,29 @@ const Wrapper = styled.a.attrs(({ link }) => ({
         margin-top: 32px;
         margin-bottom: 24px;
 
+        @media screen and (min-width: 880px) {
+          margin-top: 0px;
+          margin-bottom: 24px;
+        }
+        @media screen and (min-width: 1024px) {
+          margin-bottom: 32px;
+        }
+
         h3 {
           font-weight: 600;
           font-size: 2rem;
           line-height: 2.4rem;
           color: var(--black);
+
+          @media screen and (min-width: 880px) {
+            font-size: 2.4rem;
+          }
+          @media screen and (min-width: 960px) {
+            font-size: 2.8rem;
+          }
+          @media screen and (min-width: 1100px) {
+            font-size: 3.4rem;
+          }
         }
       }
 
@@ -73,6 +132,10 @@ const Wrapper = styled.a.attrs(({ link }) => ({
         font-size: 1.4rem;
         line-height: 2.4rem;
         color: var(--body-black);
+
+        @media screen and (min-width: 880px) {
+          font-size: 1.6rem;
+        }
       }
 
       &--tag {
