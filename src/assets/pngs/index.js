@@ -8,6 +8,9 @@ import proj4 from "./proj-4.png";
 import proj5 from "./proj-5.png";
 import proj6 from "./proj-6.png";
 
+// avatar
+import avatar from "./avatar.png";
+
 export const pngs = {
   videoThumbnail,
   proj1,
@@ -16,4 +19,5 @@ export const pngs = {
   proj4,
   proj5,
   proj6,
+  avatar,
 };
