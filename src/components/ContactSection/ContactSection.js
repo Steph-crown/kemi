@@ -37,13 +37,11 @@ const ContactSection = () => {
           </ContactFormWrapper>
           <footer>
             <p>
-              <span>
-                <Copyright />
-                Copyright 2022 . All right reserved
-              </span>
+              <Copyright />
+              Copyright 2022 . All right reserved
             </p>
           </footer>
-          <button>
+          <button className="up-btn">
             <GoUpIcon />
           </button>
         </div>

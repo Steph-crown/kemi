@@ -27,6 +27,11 @@ const GlobalStyle = createGlobalStyle`
     list-style: none;
   }
 
+  input {
+    outline: none;
+    border: none;
+  }
+
   .container {
     width: 100%;
     padding: 0 16px;

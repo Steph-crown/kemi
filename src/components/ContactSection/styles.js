@@ -18,6 +18,7 @@ export const ContactSectionWrapper = styled.section`
 
   .contact {
     &__left {
+      position: relative;
       padding: 0px 16px;
       @media screen and (min-width: 880px) {
         padding: 0 32px;
@@ -96,15 +97,70 @@ export const ContactSectionWrapper = styled.section`
     &__image {
       width: 100%;
       object-fit: cover;
+      @media screen and (max-width: 880px) {
+        height: 240px;
+      }
 
       @media screen and (min-width: 880px) {
         width: 50%;
+        max-height: 1024px;
       }
+    }
+  }
+
+  footer {
+    margin: 40px 0;
+    p {
+      font-weight: 400;
+      font-size: 1rem;
+      line-height: 1.7rem;
+      color: #b7b7b7;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      svg {
+        margin-right: 4px;
+      }
+
+      @media screen and (min-width: 880px) {
+        font-size: 1.4rem;
+      }
+    }
+  }
+
+  .up-btn {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+    margin-bottom: 32px;
+    box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+
+    @media screen and (min-width: 880px) {
+      left: 32px;
+    }
+
+    @media screen and (min-width: 1024px) {
+      left: 64px;
+      margin-bottom: 64px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      left: 80px;
+      margin-bottom: 82px;
+    }
+    svg {
+      height: 40px;
+      width: 40px;
     }
   }
 `;
 
 export const ContactFormWrapper = styled.form`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   input,
   textarea {
     width: 100%;
@@ -112,6 +168,18 @@ export const ContactFormWrapper = styled.form`
     font-size: 1.4rem;
     line-height: 2.4rem;
     color: var(--black);
+    padding: 12px 28px;
+    border: 1px solid #999999;
+    border-radius: 30px;
+    margin-bottom: 24px;
+
+    &:focus {
+      border-color: var(--blue);
+    }
+
+    @media screen and (min-width: 880px) {
+      font-size: 1.6rem;
+    }
 
     ::placeholder {
       /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -127,6 +195,32 @@ export const ContactFormWrapper = styled.form`
     ::-ms-input-placeholder {
       /* Microsoft Edge */
       color: #c4c4c4;
+    }
+  }
+
+  textarea {
+    height: 182px;
+    border-radius: 10px;
+  }
+
+  button {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    border-radius: 30px;
+    background: var(--blue);
+    margin: 0 auto;
+    padding: 16px;
+    width: 272px;
+    color: white;
+    margin-top: 24px;
+
+    &:hover {
+      background-color: var(--black);
+    }
+
+    @media screen and (min-width: 880px) {
+      margin-top: 0px;
     }
   }
 `;
