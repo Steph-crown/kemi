@@ -1,5 +1,5 @@
 import React from "react";
-import { ContactSectionWrapper } from "./styles";
+import { ContactSectionWrapper, ContactFormWrapper } from "./styles";
 import { svgs } from "../../assets/svgs";
 import { pngs } from "../../assets/pngs";
 
@@ -29,12 +29,12 @@ const ContactSection = () => {
               <Twitter />
             </a>
           </div>
-          <form>
+          <ContactFormWrapper>
             <input placeholder="Full Name" />
             <input type="email" placeholder="Email" />
             <textarea placeholder="Hi Kemi, I have an idea which needs your expertise......" />
             <button type="button">SUBMIT</button>
-          </form>
+          </ContactFormWrapper>
           <footer>
             <p>
               <span>
