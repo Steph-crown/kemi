@@ -78,10 +78,15 @@ export const ProjectsHeaderText = styled.h1`
   transform: translate3d(0rem, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
     rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
   transform-style: preserve-3d;
+  margin-bottom: -8px;
+  @media screen and (min-width: 880px) {
+    margin-bottom: 0px;
+    max-width: 784px;
+  }
   span {
     font-weight: 600;
-    font-size: 4.5rem;
-    line-height: 5.7rem;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
     color: var(--black);
     text-transform: uppercase;
     font-family: var(--font-made);

@@ -15,10 +15,7 @@ const Projects = () => {
     <ProjectsWrapper>
       <section className="container__sub container__banner">
         <ProjectsHeaderText>
-          <span>
-            MY PAST <br />
-            PROJECTS
-          </span>
+          <span>MY PAST PROJECTS</span>
         </ProjectsHeaderText>
         <Flex>
           <div className="flex__content">

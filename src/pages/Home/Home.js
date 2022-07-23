@@ -5,16 +5,9 @@ import { Components } from "../../components";
 import { HomeFragments } from "./../../fragments/Home/index";
 
 // Destructure imports
-const { Navbar } = Components;
-const {
-  HomeBanner,
-  HomeVideo,
-  HomeAbout,
-  Projects,
-  Services,
-  HomeClients,
-  ContactSection,
-} = HomeFragments;
+const { Navbar, ContactSection } = Components;
+const { HomeBanner, HomeVideo, HomeAbout, Projects, Services, HomeClients } =
+  HomeFragments;
 
 const Home = () => {
   return (
