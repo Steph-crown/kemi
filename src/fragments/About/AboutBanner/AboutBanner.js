@@ -3,14 +3,11 @@ import {
   Flex,
   AboutBannerWrapper,
   BannerHeaderText,
-  PenButtonIcon,
   ImageFlex,
 } from "./styles";
-import { svgs } from "../../../assets/svgs";
 import { pngs } from "../../../assets/pngs";
 
 // Destructure imports
-const { PenIcon } = svgs;
 const { kemi } = pngs;
 
 const AboutBanner = () => {
