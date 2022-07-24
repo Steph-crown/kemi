@@ -30,14 +30,14 @@ const GuidingPrinciples = () => {
               collaborate closely with a diverse team, and devote my heart and
               souls to my works, and the outcomes speak for themselves.
             </p>
+            <CapsuleWrapper>
+              <Capsule>DILIGENCE & TIMELINESS</Capsule>
+              <Capsule>INTEGRITY IS MY WATCHWORD</Capsule>
+              <Capsule>PASSION IS MY CRAFT</Capsule>
+              <Capsule>EFFECTIVE COMMUNICATION</Capsule>
+            </CapsuleWrapper>
           </div>
 
-          <CapsuleWrapper>
-            <Capsule>DILIGENCE & TIMELINESS</Capsule>
-            <Capsule>INTEGRITY IS MY WATCHWORD</Capsule>
-            <Capsule>PASSION IS MY CRAFT</Capsule>
-            <Capsule>EFFECTIVE COMMUNICATION</Capsule>
-          </CapsuleWrapper>
           <div className="btn-group">
             <ArrowButton
               themeColor={"var(--black)"}
