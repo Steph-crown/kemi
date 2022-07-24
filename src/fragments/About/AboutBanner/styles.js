@@ -2,7 +2,30 @@ import styled from "styled-components";
 
 export const AboutBannerWrapper = styled.section.attrs({
   className: "container",
-})``;
+})`
+  .outside {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+    color: var(--body-black);
+    margin-top: -8px;
+    max-width: 820px;
+
+    @media screen and (min-width: 768px) {
+      font-size: 1.8rem;
+      line-height: 3.6rem;
+      margin-top: 0px;
+    }
+    @media screen and (min-width: 880px) {
+      font-size: 2.4rem;
+      line-height: 4.32rem;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 3.2rem;
+      line-height: 5.8rem;
+    }
+  }
+`;
 
 export const Flex = styled.div`
   display: flex;
@@ -73,6 +96,38 @@ export const BannerHeaderText = styled.h1`
       line-height: 13rem;
     }
   }
+  &.sub {
+    margin-top: 24px;
+    @media screen and (min-width: 768px) {
+      margin-top: 40px;
+    }
+    @media screen and (min-width: 960px) {
+      margin-top: 64px;
+    }
+    @media screen and (min-width: 1024px) {
+      margin-top: 96px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-top: 124px;
+    }
+    span {
+      font-size: 2.4rem;
+      line-height: 3.2rem;
+
+      @media screen and (min-width: 768px) {
+        font-size: 6rem;
+        line-height: 7.5rem;
+      }
+      @media screen and (min-width: 1024px) {
+        font-size: 8rem;
+        line-height: 10rem;
+      }
+      @media screen and (min-width: 1280px) {
+        font-size: 11rem;
+        line-height: 13rem;
+      }
+    }
+  }
   max-width: 268px;
 
   margin: 0px 0 32px 0;
@@ -90,35 +145,6 @@ export const BannerHeaderText = styled.h1`
   @media screen and (min-width: 1200px) {
     max-width: 100%;
     margin: 90px 0 60px 0;
-  }
-`;
-
-export const PenButtonIcon = styled.button`
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--green);
-  cursor: pointer;
-
-  &:hover {
-    background: var(--blue);
-    transform: scale3d(0.9, 0.6, 1.2);
-  }
-
-  @media screen and (min-width: 768px) {
-    width: 55px;
-    height: 55px;
-  }
-  @media screen and (min-width: 1024px) {
-    width: 70px;
-    height: 70px;
-  }
-  @media screen and (min-width: 1280px) {
-    width: 80px;
-    height: 80px;
   }
 `;
 

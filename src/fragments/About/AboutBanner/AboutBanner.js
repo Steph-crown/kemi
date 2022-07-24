@@ -40,6 +40,22 @@ const AboutBanner = () => {
             meeting deadlines.
           </p>
         </ImageFlex>
+        <Flex className="banner__flex">
+          <div>
+            <BannerHeaderText className="sub">
+              <span>LIFE OUTSIDE WORK</span>
+            </BannerHeaderText>
+          </div>
+        </Flex>
+        <p className="outside">
+          Inspiration for my designs comes from living an active fun-filled
+          life. Hanging out with friends, and creating memories with people are
+          things I love and are important to me. My ever-inquisitive mind pushes
+          me to explore other fields like fashion and I love travelling too. Oh,
+          one more thing! It’s no mystery why my friends call me ‘the life of
+          the party’. I definitely know when to close the lid and have a good
+          time!
+        </p>
       </section>
     </AboutBannerWrapper>
   );
