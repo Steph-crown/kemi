@@ -6,13 +6,14 @@ import { AboutFragments } from "../../fragments/About";
 
 // Destructure imports
 const { Navbar, ContactSection } = Components;
-const { AboutBanner } = AboutFragments;
+const { AboutBanner, AboutVideo } = AboutFragments;
 
 const About = () => {
   return (
     <AboutWrapper>
       <Navbar />
       <AboutBanner />
+      <AboutVideo />
       <ContactSection />
     </AboutWrapper>
   );
