@@ -2,15 +2,17 @@
 import React from "react";
 import { Components } from "../../components";
 import { AboutWrapper } from "./styles";
+import { AboutFragments } from "../../fragments/About";
 
 // Destructure imports
 const { Navbar, ContactSection } = Components;
+const { AboutBanner } = AboutFragments;
 
 const About = () => {
   return (
     <AboutWrapper>
       <Navbar />
-      <h1>About</h1>
+      <AboutBanner />
       <ContactSection />
     </AboutWrapper>
   );

@@ -20,8 +20,10 @@ export const ContactSectionWrapper = styled.section`
     &__left {
       position: relative;
       padding: 0px 16px;
-      @media screen and (min-width: 880px) {
+      @media screen and (min-width: 768px) {
         padding: 0 32px;
+      }
+      @media screen and (min-width: 880px) {
         width: 50%;
       }
 

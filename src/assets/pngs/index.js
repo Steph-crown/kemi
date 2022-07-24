@@ -12,6 +12,9 @@ import footerImage from "./footer-image.png";
 // avatar
 import avatar from "./avatar.png";
 
+// kemi portraits
+import kemi from "./kemi.png";
+
 export const pngs = {
   videoThumbnail,
   proj1,
@@ -22,4 +25,5 @@ export const pngs = {
   proj6,
   avatar,
   footerImage,
+  kemi,
 };
