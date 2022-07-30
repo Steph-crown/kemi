@@ -3,6 +3,12 @@ import styled from "styled-components";
 export const AboutBannerWrapper = styled.section.attrs({
   className: "container",
 })`
+  .container {
+    &__banner {
+      margin-top: 12px;
+    }
+  }
+
   .outside {
     font-weight: 400;
     font-size: 1.4rem;
