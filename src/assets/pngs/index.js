@@ -10,6 +10,7 @@ import proj6 from "./proj-6.png";
 import footerImage from "./footer-image.png";
 import aboutVideo from "./about-video.png";
 import caseStudy from "./case-study.png";
+import library from "./library.png";
 
 // avatar
 import avatar from "./avatar.png";
@@ -30,4 +31,5 @@ export const pngs = {
   kemi,
   aboutVideo,
   caseStudy,
+  library,
 };
