@@ -12,6 +12,7 @@ import { ReactComponent as Linkedin } from "./linkedin.svg";
 import { ReactComponent as Twitter } from "./twitter.svg";
 import { ReactComponent as Copyright } from "./copyright.svg";
 import { ReactComponent as Diamond } from "./diamond.svg";
+import { ReactComponent as DownIcon } from "./down.svg";
 
 export const svgs = {
   MenuIcon,
@@ -28,4 +29,5 @@ export const svgs = {
   Twitter,
   Copyright,
   Diamond,
+  DownIcon,
 };
