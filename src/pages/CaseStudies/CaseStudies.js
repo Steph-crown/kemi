@@ -6,13 +6,14 @@ import { CaseStudiesFragment } from "../../fragments/CaseStudies";
 
 // Destructure imports
 const { Navbar, ContactSection } = Components;
-const { CaseStudiesBanner } = CaseStudiesFragment;
+const { CaseStudiesBanner, Studies } = CaseStudiesFragment;
 
 const CaseStudies = () => {
   return (
     <CaseStudiesWrapper>
       <Navbar darkMode={true} />
       <CaseStudiesBanner />
+      <Studies />
       <ContactSection />
     </CaseStudiesWrapper>
   );

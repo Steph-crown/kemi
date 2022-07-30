@@ -1,6 +1,5 @@
 import React from "react";
 import { Flex, ProjectsWrapper, ProjectsHeaderText } from "./styles";
-import { svgs } from "../../../assets/svgs";
 import { Components } from "../../../components";
 import listOfProjects from "./project.database";
 import Project from "./Project";
