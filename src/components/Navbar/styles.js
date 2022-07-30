@@ -3,6 +3,8 @@ import styled from "styled-components";
 
 export const NavbarWrapper = styled.header`
   position: relative;
+  background-color: ${({ darkMode }) =>
+    darkMode ? "var(--black)" : "var(--white)"};
   .container {
   }
   .subb {
@@ -30,8 +32,18 @@ export const NavbarWrapper = styled.header`
 
   .nav {
     &__logo {
-      height: 24px;
-      width: 24px;
+      height: 32px;
+      width: 32px;
+      @media screen and (min-width: 960px) {
+        height: 40px;
+        width: 40px;
+      }
+      @media screen and (min-width: 12o0px) {
+        height: 50px;
+        width: 50px;
+      }
+
+      color: ${({ darkMode }) => (!darkMode ? "var(--black)" : "var(--white)")};
 
       &:hover {
         transform: scale(1.5);
@@ -91,6 +103,7 @@ export const NavL = styled(NavLink).attrs({
     font-family: var(--font-neue);
     display: block;
   }
+  color: ${({ darkMode }) => (!darkMode ? "var(--black)" : "var(--white)")};
 
   .line {
     position: relative;

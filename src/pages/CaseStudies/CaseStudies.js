@@ -8,7 +8,7 @@ const { Navbar, ContactSection } = Components;
 const CaseStudies = () => {
   return (
     <CaseStudiesWrapper>
-      <Navbar />
+      <Navbar darkMode={true} />
       <h1>CaseStudies</h1>
       <ContactSection />
     </CaseStudiesWrapper>

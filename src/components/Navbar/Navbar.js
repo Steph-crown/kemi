@@ -15,12 +15,12 @@ import { svgs } from "../../assets/svgs";
 // Destructure imports
 const { MenuIcon, Logo, PenIcon } = svgs;
 
-const Navbar = () => {
+const Navbar = ({ darkMode }) => {
   const [isOpen, setIsOpen] = React.useState(false);
 
   return (
     <>
-      <NavbarWrapper className="container">
+      <NavbarWrapper className="container" darkMode={darkMode}>
         <section className="container__sub subb">
           <Link to="/" className="home">
             <Logo className="nav__logo" />
@@ -28,25 +28,25 @@ const Navbar = () => {
           <nav className="nav__nav">
             <ul className="nav__nav-list">
               <NavListItem>
-                <NavL to="/about">
+                <NavL to="/about" darkMode={darkMode}>
                   <span>ABOUT</span>
                   <div className="line"></div>
                 </NavL>
               </NavListItem>
               <NavListItem>
-                <NavL to="/case-studies">
+                <NavL to="/case-studies" darkMode={darkMode}>
                   <span>case studies</span>
                   <div className="line"></div>
                 </NavL>{" "}
               </NavListItem>
               <NavListItem>
-                <NavL to="/design-process">
+                <NavL to="/design-process" darkMode={darkMode}>
                   <span>design process</span>
                   <div className="line"></div>
                 </NavL>
               </NavListItem>
               <NavListItem>
-                <NavL to="/contact">
+                <NavL to="/contact" darkMode={darkMode}>
                   <span>contact</span>
                   <div className="line"></div>
                 </NavL>
