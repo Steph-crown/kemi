@@ -7,7 +7,7 @@ import { pngs } from "../../assets/pngs";
 
 // Destructure imports
 const { Navbar } = Components;
-const { ContactBanner, Socials } = ContactFragments;
+const { ContactBanner, Socials, Form } = ContactFragments;
 const { library } = pngs;
 
 const Contact = () => {
@@ -17,6 +17,7 @@ const Contact = () => {
       <ContactBanner />
       <img src={library} alt="library" className="library-img" />
       <Socials />
+      <Form />
     </ContactWrapper>
   );
 };
