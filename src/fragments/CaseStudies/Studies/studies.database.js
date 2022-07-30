@@ -2,50 +2,80 @@
 import { pngs } from "../../../assets/pngs";
 
 // Destructure imports
-const { proj1, proj2, proj3, proj4, proj5, proj6 } = pngs;
+const { caseStudy } = pngs;
 
 const listOfStudies = [
   {
-    thumbnail: proj1,
+    thumbnail: caseStudy,
     title: "Banki",
+    topics: ["Branding", "UX Research", "UI Design", "Prototyping"],
     link: "https://google.com",
     desc: "A payment gateway solutions for merchants and customers.  It encompasses all the financial transactions, paying of bills, saving for a goal and getting returns on savings.",
-    type: "MOBILE APPLICATION",
+    tags: [
+      "MOBILE APPLICATION",
+      "100+ SCREENS",
+      "WIREFRAMES AND HI-FI DESIGNS",
+    ],
   },
   {
-    thumbnail: proj2,
+    thumbnail: caseStudy,
     title: "Tradezone",
-    link: "",
+    topics: ["Branding", "UX Research", "UI Design", "Prototyping"],
+    link: "https://google.com",
     desc: "A payment gateway solutions for merchants and customers.  It encompasses all the financial transactions, paying of bills, saving for a goal and getting returns on savings.",
-    type: "MOBILE APPLICATION",
+    tags: [
+      "MOBILE APPLICATION",
+      "100+ SCREENS",
+      "WIREFRAMES AND HI-FI DESIGNS",
+    ],
   },
   {
-    thumbnail: proj3,
+    thumbnail: caseStudy,
     title: "Vest",
-    link: "",
+    topics: ["Branding", "UX Research", "UI Design", "Prototyping"],
+    link: "https://google.com",
     desc: "A payment gateway solutions for merchants and customers.  It encompasses all the financial transactions, paying of bills, saving for a goal and getting returns on savings.",
-    type: "MOBILE APPLICATION",
+    tags: [
+      "MOBILE APPLICATION",
+      "100+ SCREENS",
+      "WIREFRAMES AND HI-FI DESIGNS",
+    ],
   },
   {
-    thumbnail: proj4,
+    thumbnail: caseStudy,
     title: "Altride",
-    link: "",
+    topics: ["Branding", "UX Research", "UI Design", "Prototyping"],
+    link: "https://google.com",
     desc: "A payment gateway solutions for merchants and customers.  It encompasses all the financial transactions, paying of bills, saving for a goal and getting returns on savings.",
-    type: "MOBILE APPLICATION",
+    tags: [
+      "MOBILE APPLICATION",
+      "100+ SCREENS",
+      "WIREFRAMES AND HI-FI DESIGNS",
+    ],
   },
   {
-    thumbnail: proj5,
+    thumbnail: caseStudy,
     title: "Arthub",
-    link: "",
+    topics: ["Branding", "UX Research", "UI Design", "Prototyping"],
+    link: "https://google.com",
     desc: "A payment gateway solutions for merchants and customers.  It encompasses all the financial transactions, paying of bills, saving for a goal and getting returns on savings.",
-    type: "MOBILE APPLICATION",
+    tags: [
+      "MOBILE APPLICATION",
+      "100+ SCREENS",
+      "WIREFRAMES AND HI-FI DESIGNS",
+    ],
   },
   {
-    thumbnail: proj6,
+    thumbnail: caseStudy,
     title: "Traverse",
-    link: "",
+    topics: ["Branding", "UX Research", "UI Design", "Prototyping"],
+    link: "https://google.com",
     desc: "A payment gateway solutions for merchants and customers.  It encompasses all the financial transactions, paying of bills, saving for a goal and getting returns on savings.",
-    type: "MOBILE APPLICATION",
+    tags: [
+      "MOBILE APPLICATION",
+      "100+ SCREENS",
+      "WIREFRAMES AND HI-FI DESIGNS",
+    ],
   },
 ];
 

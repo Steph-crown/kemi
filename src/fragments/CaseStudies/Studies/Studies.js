@@ -1,13 +1,15 @@
 import React from "react";
-import { Flex, StudiesWrapper, StudiesHeaderText } from "./styles";
+import { Flex, StudiesWrapper } from "./styles";
 import { Components } from "../../../components";
 import listOfStudies from "./studies.database";
 import Study from "./Study";
+import { svgs } from "../../../assets/svgs";
 
 // Destructure imports
 const {
   Buttons: { ArrowButton },
 } = Components;
+const { ArrowIcon } = svgs;
 
 const Studies = () => {
   return (
@@ -20,7 +22,10 @@ const Studies = () => {
             ))}
           </div>
           <div className="btn-group">
-            <h2>What I do</h2>
+            <div>
+              <h2>What I do</h2>
+              <ArrowIcon />
+            </div>
             <p>
               I create engaging user experience design for brands and startups
               by balancing the business needs and the user’s needs.

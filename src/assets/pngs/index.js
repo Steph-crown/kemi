@@ -9,6 +9,7 @@ import proj5 from "./proj-5.png";
 import proj6 from "./proj-6.png";
 import footerImage from "./footer-image.png";
 import aboutVideo from "./about-video.png";
+import caseStudy from "./case-study.png";
 
 // avatar
 import avatar from "./avatar.png";
@@ -28,4 +29,5 @@ export const pngs = {
   footerImage,
   kemi,
   aboutVideo,
+  caseStudy,
 };

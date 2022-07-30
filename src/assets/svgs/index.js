@@ -11,6 +11,7 @@ import { ReactComponent as GoUpIcon } from "./go-up.svg";
 import { ReactComponent as Linkedin } from "./linkedin.svg";
 import { ReactComponent as Twitter } from "./twitter.svg";
 import { ReactComponent as Copyright } from "./copyright.svg";
+import { ReactComponent as Diamond } from "./diamond.svg";
 
 export const svgs = {
   MenuIcon,
@@ -26,4 +27,5 @@ export const svgs = {
   Linkedin,
   Twitter,
   Copyright,
+  Diamond,
 };

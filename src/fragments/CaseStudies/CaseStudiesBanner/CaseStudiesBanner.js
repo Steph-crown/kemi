@@ -37,5 +37,9 @@ const Wrapper = styled.section.attrs({
     span {
       color: var(--white);
     }
+
+    h1 {
+      margin-bottom: 0;
+    }
   }
 `;
