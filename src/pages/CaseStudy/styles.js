@@ -17,4 +17,18 @@ export const CaseStudyWrapper = styled.section`
     font-size: 3rem;
     margin-top: 3rem;
   }
+
+  header.container {
+    padding-bottom: 24px;
+
+    @media screen and (min-width: 600px) {
+      padding-bottom: 28px;
+    }
+    @media screen and (min-width: 960px) {
+      padding-bottom: 32px;
+    }
+    @media screen and (min-width: 1200px) {
+      padding-bottom: 40px;
+    }
+  }
 `;

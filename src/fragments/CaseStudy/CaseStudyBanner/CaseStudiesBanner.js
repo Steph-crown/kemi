@@ -1,16 +1,23 @@
 import React from "react";
+import { useNavigate } from "react-router";
 import styled from "styled-components";
 import { svgs } from "../../../assets/svgs";
 
 const { BackIcon } = svgs;
 
 const CaseStudyBanner = ({ title, shortDesc, bannerImage }) => {
+  const navigate = useNavigate();
   return (
     <>
       <Wrapper>
         <section className="container__sub container__banner">
           <Content>
-            <button className="back-btn">
+            <button
+              className="back-btn"
+              onClick={() => {
+                navigate(-1);
+              }}
+            >
               <BackIcon />
               Back
             </button>

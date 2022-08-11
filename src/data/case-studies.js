@@ -11,8 +11,7 @@ const caseStudies = [
     comingSoonBg: "rgba(42, 80, 167, 0.8)",
     comingSoonColor: "rgba(12, 128, 244, 1)",
     bannerImage: arthubBanner,
-    summary:
-      "A ride hailing and car rentals mobile application which allow users book various ride at the comfort of their home, schedule ride, rent cars and as well earn an income as riders.",
+    summary: "A non-fungible token marketplace for creators ",
     tags: ["UI/UX", "Research", "Branding"],
     work: {
       header: "WORKFLOW & TIMELINE",
@@ -73,6 +72,7 @@ const caseStudies = [
     color: "#373536",
     comingSoonBg: "#423D3D",
     comingSoonColor: "#FFFFFF",
+    bannerImage: arthubBanner,
     title: "UTEXT MOBILE APP",
     shortDesc: "A VOICE OVER INTERNET PROTOCOL PLATFORM.",
     summary:
