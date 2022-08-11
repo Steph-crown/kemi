@@ -15,12 +15,16 @@ import { svgs } from "../../assets/svgs";
 // Destructure imports
 const { MenuIcon, Logo, PenIcon } = svgs;
 
-const Navbar = ({ darkMode }) => {
+const Navbar = ({ darkMode, bgColor }) => {
   const [isOpen, setIsOpen] = React.useState(false);
 
   return (
     <>
-      <NavbarWrapper className="container" darkMode={darkMode}>
+      <NavbarWrapper
+        className="container"
+        darkMode={darkMode}
+        bgColor={bgColor}
+      >
         <section className="container__sub subb">
           <Link to="/" className="home">
             <Logo className="nav__logo" />

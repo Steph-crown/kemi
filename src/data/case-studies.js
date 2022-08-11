@@ -5,7 +5,7 @@ const { altrideBanner, arthubBanner } = pngs;
 const caseStudies = [
   {
     name: "arthub",
-    colors: ["#131739"],
+    color: "#131739",
     title: "ARTHUB MOBILE APPLICATION",
     shortDesc: "A NON-FUNGIBLE TOKEN MARKETPLACE.",
     comingSoonBg: "rgba(42, 80, 167, 0.8)",
@@ -48,7 +48,7 @@ const caseStudies = [
   },
   {
     name: "gxpay",
-    colors: "#38060F",
+    color: "#38060F",
     title: "GXPAY WEB APPLICATION",
     comingSoonBg: "#603333",
     comingSoonColor: "#FFFFFF",
@@ -69,7 +69,7 @@ const caseStudies = [
   },
   {
     name: "utext",
-    colors: ["#020733"],
+    color: "#373536",
     comingSoonBg: "#423D3D",
     comingSoonColor: "#FFFFFF",
     title: "UTEXT MOBILE APP",

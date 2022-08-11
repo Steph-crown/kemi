@@ -12,9 +12,10 @@ const CaseStudy = () => {
   const { name } = useParams();
   const study = getCaseStudyByName(name);
 
+  const { title, color } = study;
   return (
     <CaseStudyWrapper>
-      <Navbar darkMode={true} />
+      <Navbar darkMode={true} bgColor={color} />
       {study ? (
         <p>single case study {name}</p>
       ) : (
