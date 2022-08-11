@@ -24,6 +24,10 @@ const routes = [
     element: <CaseStudies />,
   },
   {
+    path: "/case-studies/:name",
+    element: <CaseStudies />,
+  },
+  {
     path: "/contact",
     element: <Contact />,
   },

@@ -12,6 +12,10 @@ import aboutVideo from "./about-video.png";
 import caseStudy from "./case-study.png";
 import library from "./library.png";
 
+// case studies banner images
+import altrideBanner from "./altride.png";
+import arthubBanner from "./arthub.png";
+
 // avatar
 import avatar from "./avatar.png";
 
@@ -32,4 +36,6 @@ export const pngs = {
   aboutVideo,
   caseStudy,
   library,
+  altrideBanner,
+  arthubBanner,
 };
