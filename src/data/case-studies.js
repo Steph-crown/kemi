@@ -26,7 +26,7 @@ const caseStudies = [
   },
   {
     name: "altride",
-    bgColor: "#020733",
+    color: "#020733",
     comingSoonBg: "rgba(42, 80, 167, 0.8)",
     comingSoonColor: "rgba(12, 128, 244, 1)",
     title: "ALTRIDE MOBILE APPLICATION",
@@ -53,6 +53,7 @@ const caseStudies = [
     comingSoonBg: "#603333",
     comingSoonColor: "#FFFFFF",
     shortDesc: "A PAYMENT GATEWAY SOLUTION FOR MERCHANTS.",
+    bannerImage: altrideBanner,
     summary:
       "A web application which enables merchants transact seamlessly with their customers through its payment gateway technology. Merchants can sign up on the platform, get onboarded and set up their services and products. It is a payment solution created for merchants to receive payments from their customers, view their transaction reports and monitor the general performance of their businesses.",
     tags: ["UI/UX", "Research", "Branding"],

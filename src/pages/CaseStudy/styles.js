@@ -6,6 +6,11 @@ export const CaseStudyWrapper = styled.section`
     background: var(--white) !important;
   }
 
+  main {
+    background: ${({ bgColor }) => bgColor};
+    min-height: 100vh;
+  }
+
   .not-found {
     color: var(--black);
     text-align: center;
