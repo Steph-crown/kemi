@@ -3,16 +3,23 @@ import React from "react";
 import { CaseStudyWrapper } from "./styles";
 import { useParams } from "react-router";
 import { Components } from "../../components";
+import { caseStudiesQueries } from "../../query";
 
 const { Navbar } = Components;
+const { getCaseStudyByName } = caseStudiesQueries;
 
 const CaseStudy = () => {
   const { name } = useParams();
-  console.log("name", name);
+  const study = getCaseStudyByName(name);
+
   return (
     <CaseStudyWrapper>
       <Navbar darkMode={true} />
-      single case study {name}
+      {study ? (
+        <p>single case study {name}</p>
+      ) : (
+        <h3 className="not-found">Page not found</h3>
+      )}
     </CaseStudyWrapper>
   );
 };

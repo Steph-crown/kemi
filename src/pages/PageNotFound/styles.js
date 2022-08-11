@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
-export const CaseStudyWrapper = styled.section`
+export const PageNotFoundWrapper = styled.section`
   *::selection {
     color: var(--black) !important;
     background: var(--white) !important;
   }
 
-  .not-found {
+  h3 {
     color: var(--black);
     text-align: center;
     font-size: 3rem;

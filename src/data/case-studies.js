@@ -68,7 +68,7 @@ const caseStudies = [
     solutionNode: "",
   },
   {
-    name: "",
+    name: "utext",
     colors: ["#020733"],
     comingSoonBg: "#423D3D",
     comingSoonColor: "#FFFFFF",

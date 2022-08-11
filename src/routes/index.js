@@ -3,6 +3,7 @@ import routes from "./routes";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Suspense } from "react";
 import { Components } from "./../components";
+import PageNotFound from "../pages/PageNotFound/PageNotFound";
 
 // Destructure imports
 const { Loader } = Components;
@@ -22,7 +23,7 @@ export const AppRoutes = () => {
               />
             );
           })}
-          <Route path="*" element={<p>There's nothing here: 404!</p>} />
+          <Route path="*" element={<PageNotFound />} />
         </Routes>
       </Suspense>
     </BrowserRouter>
