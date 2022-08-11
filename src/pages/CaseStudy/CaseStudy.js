@@ -8,13 +8,23 @@ import { CaseStudyFragment } from "../../fragments/CaseStudy";
 
 const { Navbar } = Components;
 const { getCaseStudyByName } = caseStudiesQueries;
-const { CaseStudyBanner, Summary } = CaseStudyFragment;
+const { CaseStudyBanner, Summary, Goal } = CaseStudyFragment;
 
 const CaseStudy = () => {
   const { name } = useParams();
   const study = getCaseStudyByName(name);
 
-  const { title, color, shortDesc, bannerImage, summary, tags } = study;
+  const {
+    title,
+    color,
+    shortDesc,
+    bannerImage,
+    summary,
+    tags,
+    goal,
+    role,
+    goalBg,
+  } = study;
   return (
     <CaseStudyWrapper bgColor={color}>
       <Navbar darkMode={true} bgColor={color} />
@@ -23,6 +33,7 @@ const CaseStudy = () => {
         <main>
           <CaseStudyBanner {...{ title, shortDesc, bannerImage }} />
           <Summary {...{ summary, tags }} />
+          <Goal {...{ goal, role, goalBg }} />
         </main>
       ) : (
         <h3 className="not-found">Page not found</h3>

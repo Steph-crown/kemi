@@ -10,6 +10,7 @@ const caseStudies = [
     shortDesc: "A NON-FUNGIBLE TOKEN MARKETPLACE.",
     comingSoonBg: "rgba(42, 80, 167, 0.8)",
     comingSoonColor: "rgba(12, 128, 244, 1)",
+    goalBg: "#F9A000",
     bannerImage: arthubBanner,
     summary: "A non-fungible token marketplace for creators ",
     tags: ["UI/UX", "Research", "Branding"],
@@ -26,6 +27,7 @@ const caseStudies = [
   {
     name: "altride",
     color: "#020733",
+    goalBg: "#FF5172",
     comingSoonBg: "rgba(42, 80, 167, 0.8)",
     comingSoonColor: "rgba(12, 128, 244, 1)",
     title: "ALTRIDE MOBILE APPLICATION",
@@ -48,6 +50,7 @@ const caseStudies = [
   {
     name: "gxpay",
     color: "#38060F",
+    goalBg: "#E29B46",
     title: "GXPAY WEB APPLICATION",
     comingSoonBg: "#603333",
     comingSoonColor: "#FFFFFF",
@@ -74,6 +77,7 @@ const caseStudies = [
     comingSoonColor: "#FFFFFF",
     bannerImage: arthubBanner,
     title: "UTEXT MOBILE APP",
+    goalBg: "#407BFF",
     shortDesc: "A VOICE OVER INTERNET PROTOCOL PLATFORM.",
     summary:
       "A VOIP platform that creates seamless experience for users in term of connecting to their loved ones with the use of various channels such as: text messaging, voice calls and video calls. This application makes it easy for users to purchase international numbers at the comfort of their homes regardless of their residential country or city.",

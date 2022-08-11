@@ -1,29 +1,24 @@
 import React from "react";
 import styled from "styled-components";
 
-const Summary = ({ summary, tags }) => {
+const Goal = ({ goal, role, goalBg }) => {
   return (
-    <Wrapper>
+    <Wrapper goalBg={goalBg}>
       <section className="container__sub container__banner">
-        <h3 className="summary__header">SUMMARY</h3>
-        <div className="summary__container">
-          <p className="summary__text">{summary}</p>
-          {tags && tags.length > 0 && (
-            <div className="summary__tags">
-              {tags.map((tag, index) => (
-                <span key={index} className="summary__tag">
-                  {tag}
-                </span>
-              ))}
-            </div>
-          )}
+        <h3 className="goal__header">MY GOAL</h3>
+        <div className="goal__container">
+          <p className="goal__text">{goal}</p>
+          <div className="goal__role">
+            <h6 className="goal__role--header">MY ROLE</h6>
+            <p className="goal__role--text">{role}</p>
+          </div>
         </div>
       </section>
     </Wrapper>
   );
 };
 
-export default Summary;
+export default Goal;
 
 const Wrapper = styled.section.attrs({
   className: "container",
@@ -64,7 +59,7 @@ const Wrapper = styled.section.attrs({
     }
   }
 
-  .summary {
+  .goal {
     &__header {
       font-weight: 500;
       line-height: 160%;
@@ -107,11 +102,39 @@ const Wrapper = styled.section.attrs({
       }
     }
 
-    &__tags {
-      display: flex;
-      align-items: center;
+    &__role {
       margin-top: 48px;
       flex-wrap: wrap;
+      background-color: ${({ goalBg }) => goalBg};
+      width: fit-content;
+      max-width: 100%;
+      padding: 14px 36px 26px 36px;
+      border-radius: 20px;
+
+      &--header {
+        font-weight: 500;
+        line-height: 133%;
+        font-size: 1.4rem;
+        @media screen and (min-width: 880px) {
+          font-size: 1.6rem;
+        }
+        @media screen and (min-width: 1024px) {
+          font-size: 1.8rem;
+        }
+      }
+      &--text {
+        font-weight: 400;
+        line-height: 155%;
+        font-size: 1.4rem;
+        width: 309px;
+        margin-top: 12px;
+        @media screen and (min-width: 880px) {
+          font-size: 1.6rem;
+        }
+        @media screen and (min-width: 1024px) {
+          font-size: 1.8rem;
+        }
+      }
     }
 
     &__tag {
