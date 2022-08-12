@@ -9,7 +9,8 @@ import StudyDetail from "../../fragments/CaseStudy/StudyDetail/StudyDetail";
 
 const { Navbar, ContactSection } = Components;
 const { getCaseStudyByName } = caseStudiesQueries;
-const { CaseStudyBanner, Summary, Goal, ImageSection } = CaseStudyFragment;
+const { CaseStudyBanner, Summary, Goal, ImageSection, Work } =
+  CaseStudyFragment;
 
 const CaseStudy = () => {
   const { name } = useParams();
@@ -31,6 +32,7 @@ const CaseStudy = () => {
     caseStudiesImages,
     type,
     solution,
+    work,
   } = study;
   return (
     <CaseStudyWrapper bgColor={color}>
@@ -40,6 +42,7 @@ const CaseStudy = () => {
         <main>
           <CaseStudyBanner {...{ title, shortDesc, bannerImage }} />
           <Summary {...{ summary, tags }} />
+          <Work {...{ work, name: studyName }} />
           <Goal {...{ goal, role, goalBg }} />
           <StudyDetail {...{ comingSoonBg, comingSoonColor }} />
           <ImageSection

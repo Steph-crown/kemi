@@ -69,7 +69,12 @@ const caseStudies = [
             iconColor: "#FF5E00",
           },
           {
-            headerText: "User Feedback",
+            headerText: "Prototype",
+            list: ["User Feedback"],
+            iconColor: "#1DA1F2",
+          },
+          {
+            headerText: "UI Design",
             list: [
               "LF Wireframe",
               "High Fidelity Wireframe",
@@ -145,7 +150,12 @@ const caseStudies = [
             iconColor: "#FF5E00",
           },
           {
-            headerText: "User Feedback",
+            headerText: "Prototype",
+            list: ["User Feedback"],
+            iconColor: "#1DA1F2",
+          },
+          {
+            headerText: "UI Design",
             list: [
               "LF Wireframe",
               "High Fidelity Wireframe",
