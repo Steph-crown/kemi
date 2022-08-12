@@ -5,6 +5,7 @@ import { useParams } from "react-router";
 import { Components } from "../../components";
 import { caseStudiesQueries } from "../../query";
 import { CaseStudyFragment } from "../../fragments/CaseStudy";
+import StudyDetail from "../../fragments/CaseStudy/StudyDetail/StudyDetail";
 
 const { Navbar } = Components;
 const { getCaseStudyByName } = caseStudiesQueries;
@@ -24,6 +25,8 @@ const CaseStudy = () => {
     goal,
     role,
     goalBg,
+    comingSoonBg,
+    comingSoonColor,
   } = study;
   return (
     <CaseStudyWrapper bgColor={color}>
@@ -34,6 +37,7 @@ const CaseStudy = () => {
           <CaseStudyBanner {...{ title, shortDesc, bannerImage }} />
           <Summary {...{ summary, tags }} />
           <Goal {...{ goal, role, goalBg }} />
+          <StudyDetail {...{ comingSoonBg, comingSoonColor }} />
         </main>
       ) : (
         <h3 className="not-found">Page not found</h3>

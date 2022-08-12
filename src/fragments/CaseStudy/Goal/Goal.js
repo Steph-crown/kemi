@@ -27,7 +27,7 @@ const Wrapper = styled.section.attrs({
     &__banner {
       padding-top: 40px;
       padding-bottom: 40px;
-      border-bottom: 1.2px solid rgba(206, 230, 255, 0.8);
+      /* border-bottom: 1.2px solid rgba(206, 230, 255, 0.8); */
 
       @media screen and (min-width: 600px) {
         padding-top: 64px;
@@ -126,7 +126,7 @@ const Wrapper = styled.section.attrs({
         font-weight: 400;
         line-height: 155%;
         font-size: 1.4rem;
-        width: 309px;
+        max-width: 309px;
         margin-top: 12px;
         @media screen and (min-width: 880px) {
           font-size: 1.6rem;

@@ -104,8 +104,18 @@ const Content = styled.div`
     position: absolute;
     top: 0;
     left: 0;
+    svg {
+      margin-right: 6px;
+      height: 16px;
+      width: 16px;
+    }
     @media screen and (min-width: 800px) {
       font-size: 1.6rem;
+      svg {
+        margin-right: 10px;
+        height: 24px;
+        width: 24px;
+      }
     }
     @media screen and (min-width: 1200px) {
       font-size: 1.8rem;

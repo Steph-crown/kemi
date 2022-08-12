@@ -22,6 +22,12 @@ import avatar from "./avatar.png";
 // kemi portraits
 import kemi from "./kemi.png";
 
+// case study images
+import altrideImages from "./altride";
+import arthubImages from "./arthub";
+import gxpayImages from "./gxpay";
+import utextImages from "./utext";
+
 export const pngs = {
   videoThumbnail,
   proj1,
@@ -38,4 +44,10 @@ export const pngs = {
   library,
   altrideBanner,
   arthubBanner,
+
+  // case study images
+  altrideImages,
+  arthubImages,
+  gxpayImages,
+  utextImages,
 };

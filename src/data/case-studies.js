@@ -1,6 +1,13 @@
 import { pngs } from "../assets/pngs";
 
-const { altrideBanner, arthubBanner } = pngs;
+const {
+  altrideBanner,
+  arthubBanner,
+  altrideImages,
+  arthubImages,
+  gxpayImages,
+  utextImages,
+} = pngs;
 
 const caseStudies = [
   {
@@ -23,6 +30,7 @@ const caseStudies = [
     role: "Product Design, User Interviews, Wireframing, User research, Branding",
     solution: "Hi-fidelity mobile application design",
     solutionNode: "",
+    caseStudiesImages: arthubImages,
   },
   {
     name: "altride",
@@ -46,6 +54,7 @@ const caseStudies = [
     role: "Product Design, User Interviews, Wireframing, User research, Branding",
     solution: "Hi-fidelity mobile application design",
     solutionNode: "",
+    caseStudiesImages: altrideImages,
   },
   {
     name: "gxpay",
@@ -69,6 +78,7 @@ const caseStudies = [
     role: "Product Design, User Interviews, Wireframing, User research, Branding",
     solution: "Hi-fidelity web application design",
     solutionNode: "",
+    caseStudiesImages: gxpayImages,
   },
   {
     name: "utext",
@@ -92,6 +102,7 @@ const caseStudies = [
     role: "Product Design, User Interviews, Wireframing, User research, Branding",
     solution: "Hi-fidelity mobile application design",
     solutionNode: "",
+    caseStudiesImages: utextImages,
   },
 ];
 
