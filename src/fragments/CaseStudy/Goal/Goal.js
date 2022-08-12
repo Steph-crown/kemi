@@ -39,7 +39,7 @@ const Goal = ({ goal, role, goalBg }) => {
             <h6 className="goal__role--header">MY ROLE</h6>
             <p className="goal__role--text">{role}</p>
           </div>
-          <button onClick={clickMe}>Click me</button>
+          {/* <button onClick={clickMe}>Click me</button> */}
         </div>
       </section>
     </Wrapper>

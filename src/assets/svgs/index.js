@@ -17,6 +17,7 @@ import { ReactComponent as BackIcon } from "./back.svg";
 import { ReactComponent as Dot } from "./dot.svg";
 import { ReactComponent as HollowDot } from "./hollow-dot.svg";
 import { ReactComponent as Star } from "./star.svg";
+import { ReactComponent as VertLine } from "./vert-line.svg";
 
 export const svgs = {
   MenuIcon,
@@ -38,4 +39,5 @@ export const svgs = {
   Dot,
   HollowDot,
   Star,
+  VertLine,
 };

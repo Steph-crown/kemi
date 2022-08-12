@@ -31,8 +31,8 @@ const caseStudies = [
       workNode: {
         HeaderIcon: Dot,
         titles: ["Discovery", "Design", "Delivery"],
-        headerBg: "#0B345F",
-        bodyBg: "#115EAB",
+        headerBg: "#6D6DBB",
+        bodyBg: "#091527",
         timeLines: [
           {
             headerText: "Idea Development",

@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { svgs } from "../../assets/svgs";
 
 const Timeline1 = ({ workNode, name }) => {
   const {
@@ -12,6 +13,8 @@ const Timeline1 = ({ workNode, name }) => {
   return (
     <Wrapper>
       <section>
+        {/* <VertLine className="first-abs" />
+        <VertLine className="second-abs" /> */}
         <StyledFlex>
           {titles.map((title) => (
             <div key={title} className="header">
@@ -25,6 +28,7 @@ const Timeline1 = ({ workNode, name }) => {
             <TimelineWrapper
               {...{ headerBg, bodyBg, iconColor: timeline.iconColor }}
               key={timeline.headerText}
+              className="f"
             >
               <section className="timeline">
                 <div className="timeline__header">
@@ -49,6 +53,7 @@ const Timeline1 = ({ workNode, name }) => {
             <TimelineWrapper
               {...{ headerBg, bodyBg, iconColor: timeline.iconColor }}
               key={timeline.headerText}
+              className="s"
             >
               <section className="timeline">
                 <div className="timeline__header">
@@ -83,12 +88,46 @@ const Wrapper = styled.section`
   * {
     color: var(--white);
   }
+  & > section {
+    position: relative;
+    height: 100%;
+
+    .first-abs,
+    .second-abs {
+      position: absolute;
+      z-index: 0;
+      height: 200%;
+      margin-top: -150px;
+    }
+
+    .first-abs {
+      left: 30%;
+    }
+
+    .second-abs {
+      right: 34%;
+    }
+  }
 `;
 
 const StyledFlex = styled.div`
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 960px) {
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1304px) {
+    margin-bottom: 40px;
+  }
+  position: relative;
+  z-index: 5;
+
+  &:nth-child(2) {
+    margin-bottom: 20px;
+  }
 
   .header {
     width: 33%;
@@ -126,7 +165,7 @@ const TimelineWrapper = styled.div`
   .timeline {
     background: ${({ bodyBg }) => bodyBg};
     border-radius: 20px;
-    width: 390px;
+    width: 380px;
     max-width: 90%;
 
     &__header {
@@ -170,6 +209,50 @@ const TimelineWrapper = styled.div`
         font-size: 1.6rem;
         line-height: 119%;
         margin-bottom: 12px;
+      }
+    }
+  }
+
+  &.f {
+    margin-bottom: 0;
+    &:nth-child(1) {
+      .timeline {
+        width: 274px;
+
+        &__body--text {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &.s {
+    &:nth-child(1) {
+      position: relative;
+      .timeline {
+        /* position: absolute; */
+        left: 20%;
+        margin-left: 64px;
+        &__body--text {
+          width: 100%;
+        }
+      }
+    }
+    &:nth-child(2) {
+      position: relative;
+      .timeline {
+        position: absolute;
+        margin-top: -72px;
+        width: 274px;
+        &__body--text {
+          width: 100%;
+        }
+      }
+    }
+    &:nth-child(3) {
+      position: relative;
+      .timeline {
+        margin-left: -100px;
       }
     }
   }
