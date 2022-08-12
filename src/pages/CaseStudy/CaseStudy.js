@@ -7,7 +7,7 @@ import { caseStudiesQueries } from "../../query";
 import { CaseStudyFragment } from "../../fragments/CaseStudy";
 import StudyDetail from "../../fragments/CaseStudy/StudyDetail/StudyDetail";
 
-const { Navbar } = Components;
+const { Navbar, ContactSection } = Components;
 const { getCaseStudyByName } = caseStudiesQueries;
 const { CaseStudyBanner, Summary, Goal, ImageSection } = CaseStudyFragment;
 
@@ -49,6 +49,8 @@ const CaseStudy = () => {
       ) : (
         <h3 className="not-found">Page not found</h3>
       )}
+
+      <ContactSection />
     </CaseStudyWrapper>
   );
 };
