@@ -13,7 +13,7 @@ const ImageSection = ({ caseStudiesImages, name, type, solution }) => {
               src={image}
               alt={`${name} ${index}`}
               key={`index ${index}`}
-              className={`image__image image__image--${index} image__image--${name}__${index}`}
+              className={`image__image image__image--${index} image__image--${name}__${index} image__image--${name}`}
             />
           ))}
         </div>
@@ -70,7 +70,7 @@ const Wrapper = styled.section.attrs({
     }
 
     @media screen and (min-width: 1200px) {
-      margin-bottom: 120px;
+      margin-bottom: 150px;
     }
 
     &:nth-child(3n - 1) {
@@ -89,6 +89,28 @@ const Wrapper = styled.section.attrs({
     }
 
     &--altride {
+      &__1 {
+        /* margin-top: 40px; */
+      }
+    }
+    &--arthub {
+      &:nth-child(3n - 1) {
+        margin-top: 0;
+      }
+      &:nth-child(2n + 1) {
+        margin-top: ${({ type }) => (type === "mobile" ? "40px" : "")};
+
+        @media screen and (min-width: 640px) {
+          margin-top: ${({ type }) => (type === "mobile" ? "56px" : "")};
+        }
+        @media screen and (min-width: 960px) {
+          margin-top: ${({ type }) => (type === "mobile" ? "80px" : "")};
+        }
+
+        @media screen and (min-width: 1200px) {
+          margin-top: ${({ type }) => (type === "mobile" ? "120px" : "")};
+        }
+      }
       &__1 {
         /* margin-top: 40px; */
       }
