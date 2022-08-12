@@ -14,6 +14,9 @@ import { ReactComponent as Copyright } from "./copyright.svg";
 import { ReactComponent as Diamond } from "./diamond.svg";
 import { ReactComponent as DownIcon } from "./down.svg";
 import { ReactComponent as BackIcon } from "./back.svg";
+import { ReactComponent as Dot } from "./dot.svg";
+import { ReactComponent as HollowDot } from "./hollow-dot.svg";
+import { ReactComponent as Star } from "./star.svg";
 
 export const svgs = {
   MenuIcon,
@@ -32,4 +35,7 @@ export const svgs = {
   Diamond,
   DownIcon,
   BackIcon,
+  Dot,
+  HollowDot,
+  Star,
 };
