@@ -12,6 +12,7 @@ const {
 const caseStudies = [
   {
     name: "arthub",
+    type: "mobile",
     color: "#131739",
     title: "ARTHUB MOBILE APPLICATION",
     shortDesc: "A NON-FUNGIBLE TOKEN MARKETPLACE.",
@@ -35,6 +36,7 @@ const caseStudies = [
   {
     name: "altride",
     color: "#020733",
+    type: "mobile",
     goalBg: "#FF5172",
     comingSoonBg: "rgba(42, 80, 167, 0.8)",
     comingSoonColor: "rgba(12, 128, 244, 1)",
@@ -59,6 +61,7 @@ const caseStudies = [
   {
     name: "gxpay",
     color: "#38060F",
+    type: "desktop",
     goalBg: "#E29B46",
     title: "GXPAY WEB APPLICATION",
     comingSoonBg: "#603333",
@@ -82,6 +85,7 @@ const caseStudies = [
   },
   {
     name: "utext",
+    type: "mobile",
     color: "#373536",
     comingSoonBg: "#423D3D",
     comingSoonColor: "#FFFFFF",
