@@ -30,6 +30,7 @@ const CaseStudy = () => {
     comingSoonColor,
     caseStudiesImages,
     type,
+    solution,
   } = study;
   return (
     <CaseStudyWrapper bgColor={color}>
@@ -41,7 +42,9 @@ const CaseStudy = () => {
           <Summary {...{ summary, tags }} />
           <Goal {...{ goal, role, goalBg }} />
           <StudyDetail {...{ comingSoonBg, comingSoonColor }} />
-          <ImageSection {...{ caseStudiesImages, name: studyName, type }} />
+          <ImageSection
+            {...{ caseStudiesImages, name: studyName, type, solution }}
+          />
         </main>
       ) : (
         <h3 className="not-found">Page not found</h3>
