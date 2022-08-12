@@ -23,7 +23,7 @@ const Timeline1 = ({ workNode, name }) => {
         <StyledFlex>
           {timelines.slice(0, 3).map((timeline) => (
             <TimelineWrapper
-              {...{ headerBg, bodyBg }}
+              {...{ headerBg, bodyBg, iconColor: timeline.iconColor }}
               key={timeline.headerText}
             >
               <section className="timeline">
@@ -47,7 +47,7 @@ const Timeline1 = ({ workNode, name }) => {
         <StyledFlex>
           {timelines.slice(3, 6).map((timeline) => (
             <TimelineWrapper
-              {...{ headerBg, bodyBg }}
+              {...{ headerBg, bodyBg, iconColor: timeline.iconColor }}
               key={timeline.headerText}
             >
               <section className="timeline">
@@ -138,6 +138,11 @@ const TimelineWrapper = styled.div`
 
       svg {
         margin-right: 12px;
+        /* color: red; */
+
+        & * {
+          color: ${({ iconColor }) => iconColor};
+        }
       }
 
       &--text {

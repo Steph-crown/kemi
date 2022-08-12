@@ -2,6 +2,33 @@ import React from "react";
 import styled from "styled-components";
 
 const Goal = ({ goal, role, goalBg }) => {
+  const clickMe = () => {
+    // let a = fetch("https://jsonplaceholder.typicode.com/posts/1");
+    // .then((response) => response.json())
+    // .then((json) => console.log(json));
+
+    Promise.all([
+      fetch("https://jsonplaceholder.typicode.com/posts/1"),
+      fetch("https://jsonplaceholder.typicode.com/posts"),
+      fetch("https://jsonplaceholder.typicode.com/posts", {
+        method: "POST",
+        body: JSON.stringify({
+          title: "foo",
+          body: "bar",
+          userId: 1,
+        }),
+        headers: {
+          "Content-type": "application/json; charset=UTF-8",
+        },
+      }),
+    ])
+      .then(([items, contactlist, itemgroup]) => {
+        console.log("yooooo");
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
   return (
     <Wrapper goalBg={goalBg}>
       <section className="container__sub container__banner">
@@ -12,6 +39,7 @@ const Goal = ({ goal, role, goalBg }) => {
             <h6 className="goal__role--header">MY ROLE</h6>
             <p className="goal__role--text">{role}</p>
           </div>
+          <button onClick={clickMe}>Click me</button>
         </div>
       </section>
     </Wrapper>
