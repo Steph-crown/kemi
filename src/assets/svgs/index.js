@@ -17,6 +17,7 @@ import { ReactComponent as BackIcon } from "./back.svg";
 import { ReactComponent as Dot } from "./dot.svg";
 import { ReactComponent as HollowDot } from "./hollow-dot.svg";
 import { ReactComponent as Star } from "./star.svg";
+import { ReactComponent as Close } from "./close.svg";
 import { ReactComponent as VertLine } from "./vert-line.svg";
 
 import { ReactComponent as P1Bottom } from "./p1bottom.svg";
@@ -64,6 +65,7 @@ export const svgs = {
   HollowDot,
   Star,
   VertLine,
+  Close,
 
   P1Bottom,
   P1Top,

@@ -13,7 +13,7 @@ import {
 import { svgs } from "../../assets/svgs";
 
 // Destructure imports
-const { MenuIcon, Logo, PenIcon } = svgs;
+const { MenuIcon, Logo, Close } = svgs;
 
 const Navbar = ({ darkMode, bgColor }) => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -22,8 +22,9 @@ const Navbar = ({ darkMode, bgColor }) => {
     <>
       <NavbarWrapper
         className="container"
-        darkMode={darkMode}
+        darkMode={darkMode || isOpen}
         bgColor={bgColor}
+        // open={isOpen}
       >
         <section className="container__sub subb">
           <Link to="/" className="home">
@@ -32,25 +33,25 @@ const Navbar = ({ darkMode, bgColor }) => {
           <nav className="nav__nav">
             <ul className="nav__nav-list">
               <NavListItem>
-                <NavL to="/about" darkMode={darkMode}>
+                <NavL to="/about" darkMode={darkMode || isOpen}>
                   <span>ABOUT</span>
                   <div className="line"></div>
                 </NavL>
               </NavListItem>
               <NavListItem>
-                <NavL to="/case-studies" darkMode={darkMode}>
+                <NavL to="/case-studies" darkMode={darkMode || isOpen}>
                   <span>case studies</span>
                   <div className="line"></div>
                 </NavL>{" "}
               </NavListItem>
               <NavListItem>
-                <NavL to="/design-process" darkMode={darkMode}>
+                <NavL to="/design-process" darkMode={darkMode || isOpen}>
                   <span>design process</span>
                   <div className="line"></div>
                 </NavL>
               </NavListItem>
               <NavListItem>
-                <NavL to="/contact" darkMode={darkMode}>
+                <NavL to="/contact" darkMode={darkMode || isOpen}>
                   <span>contact</span>
                   <div className="line"></div>
                 </NavL>
@@ -68,7 +69,7 @@ const Navbar = ({ darkMode, bgColor }) => {
                 setIsOpen(!isOpen);
               }}
             >
-              <MenuIcon />
+              {!isOpen ? <MenuIcon /> : <Close />}
             </MenuButton>
           </section>
           <LetsTalkButton>
@@ -83,25 +84,25 @@ const Navbar = ({ darkMode, bgColor }) => {
       <NavDropdown className={!isOpen ? "" : "open"}>
         <ul className="nav__nav-list">
           <NavListItem>
-            <NavL to="/about">
+            <NavL to="/about" darkMode={darkMode || isOpen}>
               <span>ABOUT</span>
               <div className="line"></div>
             </NavL>
           </NavListItem>
           <NavListItem>
-            <NavL to="/case-studies">
+            <NavL to="/case-studies" darkMode={darkMode || isOpen}>
               <span>case studies</span>
               <div className="line"></div>
             </NavL>{" "}
           </NavListItem>
           <NavListItem>
-            <NavL to="/design-process">
+            <NavL to="/design-process" darkMode={darkMode || isOpen}>
               <span>design process</span>
               <div className="line"></div>
             </NavL>
           </NavListItem>
           <NavListItem>
-            <NavL to="/contact">
+            <NavL to="/contact" darkMode={darkMode || isOpen}>
               <span>contact</span>
               <div className="line"></div>
             </NavL>

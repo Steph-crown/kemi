@@ -54,8 +54,9 @@ export const NavbarWrapper = styled.header`
       align-items: center;
       overflow: hidden;
       position: relative;
-      width: 200px;
+      width: 300px;
       justify-content: flex-end;
+      padding: 12px 0;
     }
     &__nav {
       position: absolute;
@@ -176,7 +177,7 @@ export const NavDropdown = styled.section.attrs({
   className: "container_sub",
 })`
   width: 100%;
-  background: var(--white);
+  background: var(--black);
   z-index: 8;
   height: 100vh;
   position: fixed;
@@ -209,8 +210,8 @@ export const MobileLetsTalkButton = styled.button`
   @media screen and (min-width: 960px) {
     display: none;
   }
-  width: 42px;
-  height: 42px;
+  /* width: 42px;
+  height: 42px; */
   background: var(--green);
   border-radius: 50%;
   display: flex;
@@ -218,12 +219,20 @@ export const MobileLetsTalkButton = styled.button`
   align-items: center;
   margin-left: 12px;
 
-  position: absolute;
-  right: -200px;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 150%;
+  color: white;
+  background: var(--green);
+  padding: 12px;
+  border-radius: 50px;
 
-  &:hover {
+  position: absolute;
+  right: -250px;
+
+  /* &:hover {
     transform: scale(1.4);
-  }
+  } */
   &.open {
     right: 56px;
   }

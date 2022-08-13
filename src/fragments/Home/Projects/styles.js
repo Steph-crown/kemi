@@ -5,10 +5,10 @@ export const ProjectsWrapper = styled.section.attrs({
 })`
   .container {
     &__banner {
-      margin-top: 32px;
+      margin-top: 64px;
 
       @media screen and (min-width: 640px) {
-        margin-top: 56px;
+        margin-top: 66px;
       }
       @media screen and (min-width: 880px) {
         margin-top: 72px;
