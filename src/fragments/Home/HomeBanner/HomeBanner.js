@@ -12,6 +12,20 @@ const HomeBanner = () => {
         <Flex className="banner__flex">
           <div>
             <BannerHeaderText>
+              <span>c</span>
+              <span>r</span>
+              <span>e</span>
+              <span>a</span>
+              <span>t</span>
+              <span>i</span>
+              <span>v</span>
+              <span>e</span>
+            </BannerHeaderText>
+          </div>
+        </Flex>
+        <Flex className="banner__flex">
+          <div>
+            <BannerHeaderText>
               <span>P</span>
               <span>R</span>
             </BannerHeaderText>
@@ -31,23 +45,12 @@ const HomeBanner = () => {
         <Flex className="banner__flex">
           <div>
             <BannerHeaderText>
-              <span>D</span>
+              <span>d</span>
               <span>e</span>
               <span>s</span>
               <span>i</span>
               <span>g</span>
               <span>n</span>
-            </BannerHeaderText>
-          </div>
-        </Flex>
-        <Flex className="banner__flex">
-          <div>
-            <BannerHeaderText>
-              <span>m</span>
-              <span>a</span>
-              <span>n</span>
-              <span>a</span>
-              <span>g</span>
               <span>e</span>
               <span>r</span>
             </BannerHeaderText>

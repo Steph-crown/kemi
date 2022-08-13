@@ -35,12 +35,12 @@ export const NavbarWrapper = styled.header`
       height: 32px;
       width: 32px;
       @media screen and (min-width: 960px) {
-        height: 40px;
-        width: 40px;
-      }
-      @media screen and (min-width: 12o0px) {
         height: 50px;
         width: 50px;
+      }
+      @media screen and (min-width: 1200px) {
+        height: 56px;
+        width: 56px;
       }
 
       color: ${({ darkMode }) => (!darkMode ? "var(--black)" : "var(--white)")};
@@ -128,13 +128,21 @@ export const LetsTalkButton = styled.button`
   display: none;
   position: relative;
   z-index: 2;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 150%;
+  color: white;
+  background: var(--green);
+  padding: 12px;
+  border-radius: 50px;
 
   @media screen and (min-width: 960px) {
     display: flex;
     cursor: pointer;
-    justify-content: space-between;
+    justify-content: center;
+    /* justify-content: space-between; */
 
-    .label {
+    /* .label {
       opacity: 1;
       transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg)
         rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
@@ -143,12 +151,12 @@ export const LetsTalkButton = styled.button`
       font-size: 1.6rem;
       line-height: 2.4rem;
       color: var(--green);
-    }
+    } */
 
     &:hover {
-      .icon {
-        transform: scale(1.4);
-      }
+      /* .icon { */
+      transform: scale(1.1);
+      /* } */
     }
   }
 

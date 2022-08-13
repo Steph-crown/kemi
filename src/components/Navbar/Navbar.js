@@ -60,7 +60,8 @@ const Navbar = ({ darkMode, bgColor }) => {
 
           <section className="nav__buttons">
             <MobileLetsTalkButton className={isOpen ? "open" : ""}>
-              <PenIcon />
+              {/* <PenIcon /> */}
+              HELLO@KEMIADELEKE.COM
             </MobileLetsTalkButton>
             <MenuButton
               onClick={() => {
@@ -71,10 +72,11 @@ const Navbar = ({ darkMode, bgColor }) => {
             </MenuButton>
           </section>
           <LetsTalkButton>
-            <span className="label"> LET'S TALK</span>
+            {/* <span className="label"> LET'S TALK</span>
             <span className="icon">
               <PenIcon />
-            </span>
+            </span> */}
+            HELLO@KEMIADELEKE.COM
           </LetsTalkButton>
         </section>
       </NavbarWrapper>

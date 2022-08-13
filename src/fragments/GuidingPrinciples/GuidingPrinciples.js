@@ -16,7 +16,7 @@ const GuidingPrinciples = () => {
         <Flex className="banner__flex">
           <div>
             <BannerHeaderText className="sub">
-              <span>LIFE OUTSIDE WORK</span>
+              <span>MY GUIDING PRINCIPLES</span>
             </BannerHeaderText>
           </div>
         </Flex>
