@@ -129,9 +129,12 @@ const TimelineWrapper = styled.div`
   align-items: center;
   margin-bottom: 24px;
 
-  /* @media screen and (min-width: 600px) {
+  @media screen and (max-width: 600px) {
     width: 48%;
-  } */
+  }
+  @media screen and (max-width: 400px) {
+    width: 100%;
+  }
 
   @media screen and (min-width: 880px) {
     /* margin: 40px 0; */
@@ -149,7 +152,7 @@ const TimelineWrapper = styled.div`
   background: ${({ bgColor }) => bgColor};
   border-radius: 20px;
   width: 287px;
-  max-width: 90%;
+  max-width: 100%;
   padding: 34px 28px;
   color: white;
   svg {
