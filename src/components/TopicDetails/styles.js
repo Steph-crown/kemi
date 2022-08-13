@@ -2,8 +2,8 @@
 import styled from "styled-components";
 
 export const TopicDetailsWrapper = styled.header`
-  background-color: ${({ darkMode, bgColor }) =>
-    bgColor || (darkMode ? "var(--black)" : "var(--white)")};
+  /* background-color: ${({ darkMode, bgColor }) =>
+    bgColor || (darkMode ? "var(--black)" : "var(--white)")}; */
   .container {
   }
   .subb {
@@ -15,10 +15,11 @@ export const TopicDetailsWrapper = styled.header`
     padding: 16px 0;
     position: relative;
     width: 100%;
+    padding-bottom: 80px;
 
     @media screen and (min-width: 768px) {
       padding: 20px 0;
-      flex-direction: row;
+      flex-direction: ${({ isGreen }) => (isGreen ? "row-reverse" : "row")};
       justify-content: space-between;
       align-items: flex-start;
     }
@@ -48,24 +49,37 @@ export const TopicDetailsWrapper = styled.header`
 
     @media screen and (min-width: 768px) {
       border-bottom: none;
-      border-right: 1px solid rgba(21, 21, 21, 0.15);
+      border-right: ${({ isGreen }) =>
+        isGreen ? "none" : "1px solid rgba(21, 21, 21, 0.15)"};
       padding-right: 32px;
+      border-left: ${({ isGreen }) =>
+        !isGreen ? "none" : "1px solid rgba(21, 21, 21, 0.15)"};
     }
     @media screen and (min-width: 1024px) {
       padding-right: 40px;
+    }
+
+    @media screen and (min-width: 768px) {
+      padding-left: ${({ isGreen }) => (!isGreen ? "0" : "16px")};
+    }
+    @media screen and (min-width: 1024px) {
+      padding-left: ${({ isGreen }) => (!isGreen ? "0" : "24px")};
+    }
+    @media screen and (min-width: 1200px) {
+      padding-left: ${({ isGreen }) => (!isGreen ? "0" : "28px")};
     }
   }
   .second-half {
     margin-top: 16px;
     @media screen and (min-width: 768px) {
-      margin-top: 0;
-      margin-left: 16px;
+      margin-left: ${({ isGreen }) => (isGreen ? "0" : "16px")};
     }
     @media screen and (min-width: 1024px) {
       margin-left: 24px;
+      margin-left: ${({ isGreen }) => (isGreen ? "0" : "24px")};
     }
     @media screen and (min-width: 1200px) {
-      margin-left: 28px;
+      margin-left: ${({ isGreen }) => (isGreen ? "0" : "28x")};
     }
   }
 
@@ -107,7 +121,8 @@ export const TopicDetailsWrapper = styled.header`
       }
 
       &--small {
-        color: var(--light-grey);
+        color: ${({ isGreen }) =>
+          isGreen ? "var(--body-black)" : "var(--light-grey)"};
         font-weight: 400;
         font-size: 1.4rem;
         line-height: 171%;

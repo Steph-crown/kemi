@@ -147,6 +147,10 @@ export const DesignProcessWrapper = styled.section`
 
 export const ProcessTopicWrapper = styled.section`
   padding-bottom: 96px;
+
+  &.bg-green {
+    background-color: var(--deep-green);
+  }
   .topic {
     &__description {
       color: var(--body-black);
@@ -173,4 +177,15 @@ export const ProcessTopicWrapper = styled.section`
       }
     }
   }
+`;
+
+export const GreenScene = styled.section.attrs({
+  className: "container",
+})`
+  .container {
+    &__banner {
+    }
+  }
+  padding-top: 32px;
+  background-color: var(--deep-green);
 `;

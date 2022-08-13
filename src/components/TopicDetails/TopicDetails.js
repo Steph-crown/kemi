@@ -13,10 +13,14 @@ const TopicDetails = ({
   Illustrations,
   bgColor,
   headerBg,
+  isGreen,
 }) => {
   const [FirstIllustration, SecondIllustration] = Illustrations;
   return (
-    <TopicDetailsWrapper className="conainer" {...{ bgColor, headerBg }}>
+    <TopicDetailsWrapper
+      className="conainer"
+      {...{ bgColor, headerBg, isGreen }}
+    >
       <section className="container__sub subb">
         <div className="first-half">
           <FirstIllustration className="topic__illustration topic__illustration--first" />

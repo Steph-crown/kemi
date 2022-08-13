@@ -5,7 +5,11 @@ import {
   BannerHeaderText,
   Flex,
 } from "../../fragments/About/AboutBanner/styles";
-import { DesignProcessWrapper, ProcessTopicWrapper } from "./styles";
+import {
+  DesignProcessWrapper,
+  GreenScene,
+  ProcessTopicWrapper,
+} from "./styles";
 import { svgs } from "../../assets/svgs";
 import topics from "../../data/topics";
 
@@ -88,9 +92,47 @@ const DesignProcess = () => {
             <TopicDetails key={topic.name} {...topic} />
           ))}
 
-          <ProcessNavbar />
+          <ProcessTopicWrapper>
+            <BannerHeaderText>
+              <span>UX DESIGN</span>
+            </BannerHeaderText>
+            <p className="topic__description">
+              Being cautious and preventing costly errors in advance, we
+              visualize your ideas using simple experimental models to assess
+              the idea viability and validate design solutions. We employ
+              user-testing to pinpoint improvement areas, adapt changes, and
+              ultimately release the right product for your brand.
+            </p>
+          </ProcessTopicWrapper>
+
+          {topics["uxdesign"].map((topic) => (
+            <TopicDetails key={topic.name} {...topic} />
+          ))}
         </section>
       </section>
+
+      <GreenScene>
+        <section className="container__sub container__banner">
+          <ProcessTopicWrapper>
+            <BannerHeaderText>
+              <span>UI DESIGN</span>
+            </BannerHeaderText>
+            <p className="topic__description">
+              Focusing on your business objectives, we make your UI design
+              communicate your brand values and reinforce users’ trust. To
+              ensure an efficient and joyful user experience, we create an
+              “invisible” feel with proper visual accents that guide users
+              throughout the interface.
+            </p>
+          </ProcessTopicWrapper>
+
+          {topics["uidesign"].map((topic) => (
+            <TopicDetails key={topic.name} {...topic} isGreen={true} />
+          ))}
+        </section>
+      </GreenScene>
+
+      <ProcessNavbar />
     </DesignProcessWrapper>
   );
 };
