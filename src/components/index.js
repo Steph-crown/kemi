@@ -4,6 +4,7 @@ import Buttons from "./Buttons";
 import ContactSection from "./ContactSection/ContactSection";
 import Timelines from "./Timelines";
 import ProcessNavbar from "./ProcessNavbar/ProcessNavbar";
+import TopicDetails from "./TopicDetails/TopicDetails";
 
 export const Components = {
   Navbar,
@@ -12,4 +13,5 @@ export const Components = {
   ContactSection,
   Timelines,
   ProcessNavbar,
+  TopicDetails,
 };

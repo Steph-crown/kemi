@@ -7,9 +7,10 @@ import {
 } from "../../fragments/About/AboutBanner/styles";
 import { DesignProcessWrapper, ProcessTopicWrapper } from "./styles";
 import { svgs } from "../../assets/svgs";
+import topics from "../../data/topics";
 
 // Destructure imports
-const { Navbar, ProcessNavbar } = Components;
+const { Navbar, ProcessNavbar, TopicDetails } = Components;
 const { DownIcon } = svgs;
 
 const DesignProcess = () => {
@@ -82,6 +83,10 @@ const DesignProcess = () => {
               most relevant solution.
             </p>
           </ProcessTopicWrapper>
+
+          {topics["uxresearch"].map((topic) => (
+            <TopicDetails key={topic.name} {...topic} />
+          ))}
 
           <ProcessNavbar />
         </section>
