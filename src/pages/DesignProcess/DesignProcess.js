@@ -9,7 +9,7 @@ import { DesignProcessWrapper } from "./styles";
 import { svgs } from "../../assets/svgs";
 
 // Destructure imports
-const { Navbar } = Components;
+const { Navbar, ProcessNavbar } = Components;
 const { DownIcon } = svgs;
 
 const DesignProcess = () => {
@@ -70,6 +70,7 @@ const DesignProcess = () => {
           </div>
         </section>
       </section>
+      <ProcessNavbar />
     </DesignProcessWrapper>
   );
 };

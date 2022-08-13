@@ -3,6 +3,7 @@ import Loader from "./Loader/Loader";
 import Buttons from "./Buttons";
 import ContactSection from "./ContactSection/ContactSection";
 import Timelines from "./Timelines";
+import ProcessNavbar from "./ProcessNavbar/ProcessNavbar";
 
 export const Components = {
   Navbar,
@@ -10,4 +11,5 @@ export const Components = {
   Buttons,
   ContactSection,
   Timelines,
+  ProcessNavbar,
 };
