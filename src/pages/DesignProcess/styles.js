@@ -1,12 +1,19 @@
 import styled from "styled-components";
 
 export const DesignProcessWrapper = styled.section`
+  padding-bottom: 96px;
+
+  @media screen and (min-width: 1100px) {
+    padding-bottom: 130px;
+  }
+
   .design-table {
     display: flex;
     align-items: stretch;
     flex-wrap: wrap;
 
     overflow-x: hidden;
+    border-top: 1px solid rgba(21, 21, 21, 0.15);
 
     @media screen and (min-width: 1100px) {
       border-top: 1px solid rgba(21, 21, 21, 0.15);
@@ -131,8 +138,38 @@ export const DesignProcessWrapper = styled.section`
         font-size: 1.6rem;
         line-height: 155%;
       }
-      @media screen and (min-width: 1024px) {
+      @media screen and (min-width: 1500px) {
         font-size: 1.8rem;
+      }
+    }
+  }
+`;
+
+export const ProcessTopicWrapper = styled.section`
+  padding-bottom: 96px;
+  .topic {
+    &__description {
+      color: var(--body-black);
+      max-width: 1096px;
+      font-weight: 400;
+      line-height: 145%;
+      font-size: 2rem;
+      margin-top: -16px;
+      @media screen and (min-width: 720px) {
+        font-size: 2.4rem;
+        margin-top: 0;
+      }
+      @media screen and (min-width: 960px) {
+        font-size: 2.8rem;
+      }
+      @media screen and (min-width: 1024px) {
+        font-size: 3.2rem;
+      }
+      @media screen and (min-width: 1200px) {
+        font-size: 3.6rem;
+      }
+      @media screen and (min-width: 1400px) {
+        font-size: 4rem;
       }
     }
   }

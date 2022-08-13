@@ -18,7 +18,7 @@ const ProcessNavbar = ({ darkMode, bgColor }) => {
       bgColor={bgColor}
       progress={progress}
     >
-      <section className="container__ub subb">
+      <section className="container__sub subb">
         <div className="nav__divider">
           <div className="nav__divider-bg"></div>
           <div className="nav__progress"></div>

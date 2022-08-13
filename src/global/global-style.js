@@ -45,11 +45,11 @@ const GlobalStyle = createGlobalStyle`
     }
 
     @media screen and (min-width: 1280px) {
-      padding: 0 80px;
+      padding: 0 4.4vw;
     }
 
     &__sub {
-      max-width: 1280px;
+      max-width: 1340px;
       margin: 0 auto;
     }
 

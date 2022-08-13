@@ -80,6 +80,10 @@ export const ProcessNavbarWrapper = styled.header`
       width: 100%;
       display: flex;
       overflow-x: scroll;
+      ::-webkit-scrollbar {
+        width: 0px;
+        height: 0;
+      }
 
       &-list {
         display: flex;
