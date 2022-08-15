@@ -11,8 +11,9 @@ const Form = () => {
       <section className="container__sub container__banner">
         <ContactFormWrapper>
           <input placeholder="Full Name" />
-          <input type="email" placeholder="Email" />
+          <input type="email" placeholder="Email" name="email" />
           <textarea placeholder="Hi Kemi, I have an idea which needs your expertise......" />
+          <input type="hidden" name="subject" value="Kemi Adeleke" />
           <button type="button">SUBMIT</button>
         </ContactFormWrapper>
         <footer>

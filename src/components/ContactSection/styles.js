@@ -159,7 +159,7 @@ export const ContactSectionWrapper = styled.section`
   }
 `;
 
-export const ContactFormWrapper = styled.form`
+export const ContactFormWrapper = styled.form.attrs({ "data-netlify": "true" })`
   display: flex;
   flex-direction: column;
   justify-content: center;

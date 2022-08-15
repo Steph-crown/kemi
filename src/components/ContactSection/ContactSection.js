@@ -46,9 +46,11 @@ const ContactSection = () => {
             </a>
           </div>
           <ContactFormWrapper>
-            <input placeholder="Full Name" />
+            <input placeholder="Full Name" name="email" />
             <input type="email" placeholder="Email" />
             <textarea placeholder="Hi Kemi, I have an idea which needs your expertise......" />
+            <input type="hidden" name="subject" value="Kemi Adeleke" />
+
             <button type="button">SUBMIT</button>
           </ContactFormWrapper>
           <footer>
