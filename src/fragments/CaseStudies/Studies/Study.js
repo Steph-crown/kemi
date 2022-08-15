@@ -1,4 +1,5 @@
 import { Fragment } from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { svgs } from "../../../assets/svgs";
 
@@ -45,10 +46,8 @@ const Study = ({ thumbnail, title, link, desc, tags, topics }) => {
 
 export default Study;
 
-const Wrapper = styled.a.attrs(({ link }) => ({
-  href: link,
-  target: "_blank",
-  rel: "noreferrer",
+const Wrapper = styled(Link).attrs(({ link }) => ({
+  to: `/case-studies${link}`,
 }))`
   margin-bottom: 64px;
   display: block;

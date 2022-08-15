@@ -41,10 +41,11 @@ const Services = () => {
                     </button>
                   </header>
                   <p className="services__list--item__body">
-                    We design smart, in-demand financial solutions, delighting
-                    your audience with innovations in the finance sector.
-                    Putting end-users at the forefront and creating a high-end
-                    experience, we improve your business metrics.
+                    I design smart, in-demand financial solutions, delighting
+                    the client’s audience with innovations in the finance
+                    sector. Putting end-users at the forefront and creating a
+                    high-end experience, I improve business metrics with
+                    designs.
                   </p>
                 </div>
                 <div className="services__list--item m-8">
@@ -55,10 +56,11 @@ const Services = () => {
                     </button>
                   </header>
                   <p className="services__list--item__body">
-                    We design smart, in-demand financial solutions, delighting
-                    your audience with innovations in the finance sector.
-                    Putting end-users at the forefront and creating a high-end
-                    experience, we improve your business metrics.
+                    I design smart, in-demand e-commerce solutions, delighting
+                    the client’s audience with innovations in the e-commerce
+                    sector. Putting end-users at the forefront and creating a
+                    high-end experience, I improve business metrics with
+                    designs.
                   </p>
                 </div>
               </div>
@@ -71,10 +73,11 @@ const Services = () => {
                     </button>
                   </header>
                   <p className="services__list--item__body">
-                    We design smart, in-demand financial solutions, delighting
-                    your audience with innovations in the finance sector.
-                    Putting end-users at the forefront and creating a high-end
-                    experience, we improve your business metrics.
+                    I design smart, in-demand solutions built on the blockchain
+                    network, delighting the client’s audience with innovations
+                    in the blockchain industry. Putting end-users at the
+                    forefront and creating a high-end experience, I improve
+                    business metrics with designs.
                   </p>
                 </div>
                 <div className="services__list--item m-6">
@@ -85,10 +88,11 @@ const Services = () => {
                     </button>
                   </header>
                   <p className="services__list--item__body">
-                    We design smart, in-demand financial solutions, delighting
-                    your audience with innovations in the finance sector.
-                    Putting end-users at the forefront and creating a high-end
-                    experience, we improve your business metrics.
+                    I design smart, in-demand logitics solutions, delighting the
+                    client’s audience with innovations in the logistics
+                    industry. Putting end-users at the forefront and creating a
+                    high-end experience, I improve business metrics with
+                    designs.
                   </p>
                 </div>
               </div>

@@ -57,6 +57,10 @@ export const NavbarWrapper = styled.header`
       width: 300px;
       justify-content: flex-end;
       padding: 12px 0;
+
+      @media screen and (min-width: 960px) {
+        display: none;
+      }
     }
     &__nav {
       position: absolute;
