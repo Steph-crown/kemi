@@ -118,9 +118,9 @@ const DesignProcess = () => {
               <span>UI DESIGN</span>
             </BannerHeaderText>
             <p className="topic__description">
-              Focusing on your business objectives, we make your UI design
-              communicate your brand values and reinforce users’ trust. To
-              ensure an efficient and joyful user experience, we create an
+              Focusing on the client’s business objectives, I creates UI design
+              that communicate the brand values and reinforce users’ trust. To
+              ensure an efficient and joyful user experience, I create an
               “invisible” feel with proper visual accents that guide users
               throughout the interface.
             </p>

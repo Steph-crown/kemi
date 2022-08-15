@@ -97,8 +97,8 @@ const topics = {
     {
       name: "HAND OFF",
       descriptions: [
-        "Executing design-to-development hand-off and Q/A to ensure the design is implemented properly. ",
-        "Once the product is launched, we continuously improve product metrics to address ever-evolving user needs.",
+        "Executing design-to-development hand-off and Q/A to ensure the design is implemented properly.",
+        "Once the product is launched, I continuously improve product metrics to address ever-evolving user needs.",
       ],
       Illustrations: [P8Top, P8Bottom],
       headerBg: "#FF5172",

@@ -16,16 +16,32 @@ const ContactSection = () => {
             I am not hard to find, let's design something truly spectacular!
           </h3>
           <div className="contact__icons">
-            <a href="/">
+            <a
+              href="mailto:hello@kemiadeleke.com"
+              target={"_blank"}
+              rel="noreferrer"
+            >
               <Gmail />
             </a>
-            <a href="/">
+            <a
+              href="https://www.behance.net/oluwakemiolivia"
+              target={"_blank"}
+              rel="noreferrer"
+            >
               <Behance />
             </a>
-            <a href="/">
+            <a
+              href="https://www.linkedin.com/in/oluwakemi-adeleke/"
+              rel="noreferrer"
+              target={"_blank"}
+            >
               <Linkedin />
             </a>
-            <a href="/">
+            <a
+              href="https://twitter.com/SpontaneousKemi"
+              rel="noreferrer"
+              target={"_blank"}
+            >
               <Twitter />
             </a>
           </div>

@@ -8,6 +8,7 @@ const {
   arthubImages,
   gxpayImages,
   utextImages,
+  gxpayBanner,
 } = pngs;
 
 const { Dot, Star, HollowDot } = svgs;
@@ -23,7 +24,8 @@ const caseStudies = [
     comingSoonColor: "rgba(12, 128, 244, 1)",
     goalBg: "#F9A000",
     bannerImage: arthubBanner,
-    summary: "A non-fungible token marketplace for creators ",
+    summary:
+      "A non-fungible token marketplace mobile application for creators to display and sell their artworks. It is also an application for both creators and buyers. Buyers can place a bid and buy crypto collectibles and creators earn from listing their works for sale.",
     tags: ["UI/UX", "Research", "Branding"],
     work: {
       header: "WORKFLOW & TIMELINE",
@@ -86,7 +88,7 @@ const caseStudies = [
         ],
       },
     },
-    goal: "My major focus was on the client's audience who are the customers and riders. I kept in mind that I need to help new users understand what the product is all about, and help returning users find the information they need. My goal was to design an accessible application that is easy to use by different kind of users.",
+    goal: "My goal was to design an accessible and aesthaetically pleasing user interface that reduce multiple clicks and enable users get their task done on time with few clicks. A simple interface which enables users (both creators and buyers) buy and sell their NFTs easily without hassle. The usability of the app was my priority.",
     role: "Product Design, User Interviews, Wireframing, User research, Branding",
     solution: "Hi-fidelity mobile application design",
     solutionNode: "",
@@ -182,7 +184,7 @@ const caseStudies = [
     comingSoonBg: "#603333",
     comingSoonColor: "#FFFFFF",
     shortDesc: "A PAYMENT GATEWAY SOLUTION FOR MERCHANTS.",
-    bannerImage: altrideBanner,
+    bannerImage: gxpayBanner,
     summary:
       "A web application which enables merchants transact seamlessly with their customers through its payment gateway technology. Merchants can sign up on the platform, get onboarded and set up their services and products. It is a payment solution created for merchants to receive payments from their customers, view their transaction reports and monitor the general performance of their businesses.",
     tags: ["UI/UX", "Research", "Branding"],
@@ -250,7 +252,7 @@ const caseStudies = [
     goalBg: "#407BFF",
     shortDesc: "A VOICE OVER INTERNET PROTOCOL PLATFORM.",
     summary:
-      "A VOIP platform that creates seamless experience for users in term of connecting to their loved ones with the use of various channels such as: text messaging, voice calls and video calls. This application makes it easy for users to purchase international numbers at the comfort of their homes regardless of their residential country or city.",
+      "A non-fungible token marketplace mobile application for creators to display and sell their artworks. It is also an application for both creators and buyers. Buyers can place a bid and buy crypto collectibles and creators earn from listing their works for sale.",
     tags: ["UI/UX", "Research", "Branding"],
     work: {
       header: "SCOPE OF WORK",

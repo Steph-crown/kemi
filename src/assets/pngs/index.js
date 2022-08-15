@@ -27,6 +27,7 @@ import altrideImages from "./altride";
 import arthubImages from "./arthub";
 import gxpayImages from "./gxpay";
 import utextImages from "./utext";
+import gxpayBanner from "./gx-pay.png";
 
 export const pngs = {
   videoThumbnail,
@@ -44,6 +45,7 @@ export const pngs = {
   library,
   altrideBanner,
   arthubBanner,
+  gxpayBanner,
 
   // case study images
   altrideImages,
