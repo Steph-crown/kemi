@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { svgs } from "../../../assets/svgs";
 
@@ -28,10 +29,8 @@ const Project = ({ thumbnail, title, link, desc, type }) => {
 
 export default Project;
 
-const Wrapper = styled.a.attrs(({ link }) => ({
-  href: link,
-  target: "_blank",
-  rel: "noreferrer",
+const Wrapper = styled(Link).attrs(({ link }) => ({
+  to: `/case-studies${link}`,
 }))`
   display: flex;
   flex-direction: column;
@@ -45,6 +44,10 @@ const Wrapper = styled.a.attrs(({ link }) => ({
     padding-bottom: 0;
     &:first-child {
       border-top: none;
+    }
+
+    &:nth-child(2n) {
+      flex-direction: row;
     }
 
     & > * {
@@ -145,6 +148,17 @@ const Wrapper = styled.a.attrs(({ link }) => ({
         line-height: 2.2rem;
         color: var(--body-black);
         margin-top: 16px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 880px) {
+    &:nth-child(2n) {
+      .proj {
+        &__content {
+          border-right: none;
+          border-left: 1px solid rgba(21, 21, 21, 0.15);
+        }
       }
     }
   }

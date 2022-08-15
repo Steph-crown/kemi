@@ -14,7 +14,7 @@ const Projects = () => {
     <ProjectsWrapper>
       <section className="container__sub container__banner">
         <ProjectsHeaderText>
-          <span>MY RECENT PROJECTS</span>
+          <span>MY PAST PROJECTS</span>
         </ProjectsHeaderText>
         <Flex>
           <div className="flex__content">
