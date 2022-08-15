@@ -51,7 +51,7 @@ const ContactSection = () => {
             <textarea placeholder="Hi Kemi, I have an idea which needs your expertise......" />
             <input type="hidden" name="subject" value="Kemi Adeleke" />
 
-            <button type="button">SUBMIT</button>
+            <button type="submit">SUBMIT</button>
           </ContactFormWrapper>
           <footer>
             <p>

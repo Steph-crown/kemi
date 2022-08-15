@@ -17,7 +17,7 @@ import altrideBanner from "./altride.png";
 import arthubBanner from "./arthub.png";
 
 // avatar
-import avatar from "./avatar.png";
+// import avatar from "./avatar.png";
 
 // kemi portraits
 import kemi from "./kemi.png";
@@ -28,6 +28,7 @@ import arthubImages from "./arthub";
 import gxpayImages from "./gxpay";
 import utextImages from "./utext";
 import gxpayBanner from "./gx-pay.png";
+import avatars from "./avatars";
 
 export const pngs = {
   videoThumbnail,
@@ -37,7 +38,6 @@ export const pngs = {
   proj4,
   proj5,
   proj6,
-  avatar,
   footerImage,
   kemi,
   aboutVideo,
@@ -46,6 +46,7 @@ export const pngs = {
   altrideBanner,
   arthubBanner,
   gxpayBanner,
+  avatars,
 
   // case study images
   altrideImages,

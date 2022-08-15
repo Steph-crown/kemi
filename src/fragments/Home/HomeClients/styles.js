@@ -111,9 +111,10 @@ export const HomeClientsWrapper = styled.section.attrs({
 
         svg {
           height: 40px;
+          width: 40px;
         }
 
-        &:last-child {
+        &:first-child {
           svg {
             transform: rotate(180deg);
           }
