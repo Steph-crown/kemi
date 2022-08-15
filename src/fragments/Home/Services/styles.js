@@ -3,6 +3,10 @@ import styled from "styled-components";
 export const ServicesWrapper = styled.section.attrs({
   className: "container",
 })`
+  @media screen and (max-width: 1024px) {
+    margin-top: 32px;
+    margin-bottom: 24px;
+  }
   .container {
   }
 `;
