@@ -57,7 +57,7 @@ export const Flex = styled.div`
       padding: 54px 78px;
     }
     .md-hide {
-      margin-bottom: 48px;
+      margin-bottom: 64px;
     }
     small {
       font-weight: 400;
