@@ -10,9 +10,10 @@ const Timeline1 = ({ workNode, name }) => {
     bodyBg,
     timeLines: timelines,
   } = workNode;
+
   return (
     <Wrapper>
-      <section>
+      <section className="bg">
         {/* <VertLine className="first-abs" />
         <VertLine className="second-abs" /> */}
         <StyledFlex>
@@ -74,6 +75,142 @@ const Timeline1 = ({ workNode, name }) => {
           ))}
         </StyledFlex>
       </section>
+
+      <section className="sm">
+        {/* <VertLine className="first-abs" />
+        <VertLine className="second-abs" /> */}
+        <h6 className="header__title">{titles[0]}</h6>
+        <StyledFlex>
+          <TimelineWrapper
+            {...{ headerBg, bodyBg, iconColor: timelines[0].iconColor }}
+            className="f"
+          >
+            <section className="timeline">
+              <div className="timeline__header">
+                <HeaderIcon />
+                <h4 className="timeline__header--text">
+                  {timelines[0].headerText}
+                </h4>
+              </div>
+              <ul className="timeline__body">
+                {timelines[0].list.map((listItem) => (
+                  <li className="timeline__body--text" key={listItem}>
+                    {listItem}
+                  </li>
+                ))}
+              </ul>
+            </section>
+          </TimelineWrapper>
+          <TimelineWrapper
+            {...{ headerBg, bodyBg, iconColor: timelines[3].iconColor }}
+            className="f"
+          >
+            <section className="timeline">
+              <div className="timeline__header">
+                <HeaderIcon />
+                <h4 className="timeline__header--text">
+                  {timelines[3].headerText}
+                </h4>
+              </div>
+              <ul className="timeline__body">
+                {timelines[3].list.map((listItem) => (
+                  <li className="timeline__body--text" key={listItem}>
+                    {listItem}
+                  </li>
+                ))}
+              </ul>
+            </section>
+          </TimelineWrapper>
+        </StyledFlex>
+
+        <h6 className="header__title">{titles[1]}</h6>
+        <StyledFlex>
+          <TimelineWrapper
+            {...{ headerBg, bodyBg, iconColor: timelines[1].iconColor }}
+            className="f"
+          >
+            <section className="timeline">
+              <div className="timeline__header">
+                <HeaderIcon />
+                <h4 className="timeline__header--text">
+                  {timelines[1].headerText}
+                </h4>
+              </div>
+              <ul className="timeline__body">
+                {timelines[1].list.map((listItem) => (
+                  <li className="timeline__body--text" key={listItem}>
+                    {listItem}
+                  </li>
+                ))}
+              </ul>
+            </section>
+          </TimelineWrapper>
+          <TimelineWrapper
+            {...{ headerBg, bodyBg, iconColor: timelines[5].iconColor }}
+            className="f"
+          >
+            <section className="timeline">
+              <div className="timeline__header">
+                <HeaderIcon />
+                <h4 className="timeline__header--text">
+                  {timelines[5].headerText}
+                </h4>
+              </div>
+              <ul className="timeline__body">
+                {timelines[5].list.map((listItem) => (
+                  <li className="timeline__body--text" key={listItem}>
+                    {listItem}
+                  </li>
+                ))}
+              </ul>
+            </section>
+          </TimelineWrapper>
+        </StyledFlex>
+
+        <h6 className="header__title">{titles[2]}</h6>
+        <StyledFlex>
+          <TimelineWrapper
+            {...{ headerBg, bodyBg, iconColor: timelines[2].iconColor }}
+            className="f"
+          >
+            <section className="timeline">
+              <div className="timeline__header">
+                <HeaderIcon />
+                <h4 className="timeline__header--text">
+                  {timelines[2].headerText}
+                </h4>
+              </div>
+              <ul className="timeline__body">
+                {timelines[2].list.map((listItem) => (
+                  <li className="timeline__body--text" key={listItem}>
+                    {listItem}
+                  </li>
+                ))}
+              </ul>
+            </section>
+          </TimelineWrapper>
+          <TimelineWrapper
+            {...{ headerBg, bodyBg, iconColor: timelines[4].iconColor }}
+            className="f"
+          >
+            <section className="timeline">
+              <div className="timeline__header">
+                <HeaderIcon />
+                <h4 className="timeline__header--text">
+                  {timelines[4].headerText}
+                </h4>
+              </div>
+              <ul className="timeline__body">
+                {timelines[4].list.map((listItem) => (
+                  <li className="timeline__body--text" key={listItem}>
+                    {listItem}
+                  </li>
+                ))}
+              </ul>
+            </section>
+          </TimelineWrapper>
+        </StyledFlex>
+      </section>
     </Wrapper>
   );
 };
@@ -106,6 +243,41 @@ const Wrapper = styled.section`
 
     .second-abs {
       right: 34%;
+    }
+  }
+
+  .sm {
+    display: none;
+  }
+  @media screen and (max-width: 1024px) {
+    .bg {
+      display: none;
+    }
+    .sm {
+      display: block;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 8px 0;
+    }
+  }
+
+  .header {
+    width: 33%;
+    text-align: center;
+    &__title {
+      font-weight: 500;
+      font-size: 1.8rem;
+      line-height: 100%;
+
+      @media screen and (min-width: 600px) {
+        font-size: 2rem;
+      }
+      @media screen and (min-width: 1024px) {
+        font-size: 2.4rem;
+      }
+      @media screen and (max-width: 1024px) {
+        margin-top: 56px;
+      }
     }
   }
 `;
@@ -145,6 +317,15 @@ const StyledFlex = styled.div`
       }
     }
   }
+
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    margin: 0 auto;
+    max-width: 100%;
+  }
 `;
 
 const TimelineWrapper = styled.div`
@@ -160,6 +341,16 @@ const TimelineWrapper = styled.div`
   }
   @media screen and (min-width: 1200px) {
     margin: 56px 0;
+  }
+
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+
+    justify-content: flex-start;
+
+    &:nth-child(2n) {
+      justify-content: flex-end;
+    }
   }
 
   .timeline {
@@ -210,6 +401,10 @@ const TimelineWrapper = styled.div`
         line-height: 119%;
         margin-bottom: 12px;
       }
+    }
+
+    @media screen and (max-width: 1024px) {
+      max-width: 95%;
     }
   }
 
