@@ -11,6 +11,10 @@ const GlobalStyle = createGlobalStyle`
     transition: all 0.3s ease-in-out;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   a {
     text-decoration: none;
     color: var(--body-black);

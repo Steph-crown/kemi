@@ -60,10 +60,16 @@ const Navbar = ({ darkMode, bgColor }) => {
           </nav>
 
           <section className="nav__buttons">
-            <MobileLetsTalkButton className={isOpen ? "open" : ""}>
-              {/* <PenIcon /> */}
-              HELLO@KEMIADELEKE.COM
-            </MobileLetsTalkButton>
+            <a
+              href="mailto:hello@kemiadeleke.com"
+              target={"_blank"}
+              rel="noreferrer"
+            >
+              <MobileLetsTalkButton className={isOpen ? "open" : ""}>
+                {/* <PenIcon /> */}
+                HELLO@KEMIADELEKE.COM
+              </MobileLetsTalkButton>
+            </a>
             <MenuButton
               onClick={() => {
                 setIsOpen(!isOpen);
@@ -72,13 +78,19 @@ const Navbar = ({ darkMode, bgColor }) => {
               {!isOpen ? <MenuIcon /> : <Close />}
             </MenuButton>
           </section>
-          <LetsTalkButton>
-            {/* <span className="label"> LET'S TALK</span>
+          <a
+            href="mailto:hello@kemiadeleke.com"
+            target={"_blank"}
+            rel="noreferrer"
+          >
+            <LetsTalkButton>
+              {/* <span className="label"> LET'S TALK</span>
             <span className="icon">
               <PenIcon />
             </span> */}
-            HELLO@KEMIADELEKE.COM
-          </LetsTalkButton>
+              HELLO@KEMIADELEKE.COM
+            </LetsTalkButton>
+          </a>
         </section>
       </NavbarWrapper>
       <NavDropdown className={!isOpen ? "" : "open"}>

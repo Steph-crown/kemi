@@ -1,6 +1,7 @@
 import React from "react";
 import { HomeAboutWrapper } from "./styles";
 import { Components } from "../../../components";
+import { Link } from "react-router-dom";
 
 // Destructure imports
 const {
@@ -22,9 +23,11 @@ const HomeAbout = () => {
           </p>
         </div>
         <div className="btn-group">
-          <ArrowButton themeColor={"var(--blue)"} smFull={true} width="272px">
-            MORE ABOUT ME
-          </ArrowButton>
+          <Link to="/about">
+            <ArrowButton themeColor={"var(--blue)"} smFull={true} width="272px">
+              MORE ABOUT ME
+            </ArrowButton>
+          </Link>
         </div>
       </section>
     </HomeAboutWrapper>

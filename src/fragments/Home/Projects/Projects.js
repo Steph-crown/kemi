@@ -3,6 +3,7 @@ import { Flex, ProjectsWrapper, ProjectsHeaderText } from "./styles";
 import { Components } from "../../../components";
 import listOfProjects from "./project.database";
 import Project from "./Project";
+import { Link } from "react-router-dom";
 
 // Destructure imports
 const {
@@ -23,9 +24,15 @@ const Projects = () => {
             ))}
           </div>
           <div className="btn-group">
-            <ArrowButton themeColor={"var(--blue)"} smFull={true} width="272px">
-              ALL CASE STUDIES
-            </ArrowButton>
+            <Link to="/case-studies">
+              <ArrowButton
+                themeColor={"var(--blue)"}
+                smFull={true}
+                width="272px"
+              >
+                ALL CASE STUDIES
+              </ArrowButton>
+            </Link>
           </div>
         </Flex>
       </section>

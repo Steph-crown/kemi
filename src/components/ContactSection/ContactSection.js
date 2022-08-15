@@ -9,7 +9,7 @@ const { footerImage } = pngs;
 
 const ContactSection = () => {
   return (
-    <ContactSectionWrapper>
+    <ContactSectionWrapper id="contact">
       <section className="container__sub">
         <div className="contact__left">
           <h3 className="contact__header">

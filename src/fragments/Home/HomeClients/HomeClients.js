@@ -3,6 +3,7 @@ import { HomeClientsWrapper, Flex } from "./styles";
 import { Components } from "../../../components";
 import { svgs } from "../../../assets/svgs";
 import { pngs } from "../../../assets/pngs";
+import { Link } from "react-router-dom";
 
 // Destructure imports
 const {
@@ -53,9 +54,15 @@ const HomeClients = () => {
             </section>
           </div>
           <div className="btn-group">
-            <ArrowButton themeColor={"var(--blue)"} smFull={true} width="272px">
-              BECOME A CLIENT
-            </ArrowButton>
+            <a href="/#contact">
+              <ArrowButton
+                themeColor={"var(--blue)"}
+                smFull={true}
+                width="272px"
+              >
+                BECOME A CLIENT
+              </ArrowButton>
+            </a>
           </div>
         </Flex>
       </section>
