@@ -159,7 +159,11 @@ export const ContactSectionWrapper = styled.section`
   }
 `;
 
-export const ContactFormWrapper = styled.form.attrs({ "data-netlify": "true" })`
+export const ContactFormWrapper = styled.form.attrs({
+  "data-netlify": "true",
+  name: "contact",
+  method: "POST",
+})`
   display: flex;
   flex-direction: column;
   justify-content: center;
