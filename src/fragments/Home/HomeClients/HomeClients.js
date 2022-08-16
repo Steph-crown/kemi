@@ -4,25 +4,34 @@ import { Components } from "../../../components";
 import { svgs } from "../../../assets/svgs";
 import { pngs } from "../../../assets/pngs";
 import { Link } from "react-router-dom";
+import { testimonials } from "../../../data/testimonials";
+import { avatars } from "../../../assets/pngs/avatars";
 
 // Destructure imports
 const {
   Buttons: { ArrowButton },
 } = Components;
 const { QuoteIcon, ArrowIcon } = svgs;
-const { avatar } = pngs;
 
 const HomeClients = () => {
+  const [index, setIndex] = React.useState(0),
+    handleBackClick = () => {
+      setIndex((prev) => (prev - 1 < 0 ? testimonials.length - 1 : prev - 1));
+    },
+    handleForwardClick = () => {
+      setIndex((prev) => (prev + 1 >= testimonials.length ? 0 : prev + 1));
+    };
+
   return (
     <HomeClientsWrapper>
       <section className="container__sub container__banner">
         <header>
           <h1>MY CLIENTS</h1>
           <aside className="slider-btns md-flex">
-            <button>
+            <button onClick={handleBackClick}>
               <ArrowIcon />
             </button>
-            <button>
+            <button onClick={handleForwardClick}>
               <ArrowIcon />
             </button>
           </aside>
@@ -32,22 +41,12 @@ const HomeClients = () => {
             <section className="client">
               <div className="client__comment">
                 <QuoteIcon />
+                {console.log("tu", testimonials[index])}
                 <div>
-                  <p>
-                    I had the privilege of working with Kemi as part of the 2021
-                    winter cohort for @co.lab. As the Product manager on the
-                    team, I shared the vision of the problem we aimed to solve
-                    and found Kemi to be an excellent resource. Kemi offered
-                    design driven insights while immersing herself into the
-                    problem space. She is a seasoned and creative designer who
-                    always aims to understand the needs of the user. Kemi worked
-                    with the team to designed a beautiful product and I'm sure
-                    she will go on to design other great apps. I consider her to
-                    be an asset to any team.
-                  </p>
+                  <p>{testimonials[index].comment}</p>
                   <div className="client__profile">
-                    <p>DORCAS DARIYA</p>
-                    <img src={avatar} alt="Dorcas Dariya" />
+                    <p>{testimonials[index].name}</p>
+                    <img src={avatars[index]} alt={testimonials[index].name} />
                   </div>
                 </div>
               </div>

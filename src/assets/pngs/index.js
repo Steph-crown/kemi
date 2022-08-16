@@ -28,8 +28,8 @@ import arthubImages from "./arthub";
 import gxpayImages from "./gxpay";
 import utextImages from "./utext";
 import gxpayBanner from "./gx-pay.png";
-import avatars from "./avatars";
 
+// import avatars from "./avatars/index";
 export const pngs = {
   videoThumbnail,
   proj1,
@@ -46,7 +46,7 @@ export const pngs = {
   altrideBanner,
   arthubBanner,
   gxpayBanner,
-  avatars,
+  // avatars,
 
   // case study images
   altrideImages,

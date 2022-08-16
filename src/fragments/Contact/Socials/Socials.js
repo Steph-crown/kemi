@@ -5,9 +5,23 @@ const Socials = () => {
   return (
     <Wrapper>
       <section className="container__sub container__banner">
-        <a href="/">LINKEDIN</a>
-        <a href="/">EMAIL ADDRESS</a>
-        <a href="/">BEHANCE</a>
+        <a
+          href="https://www.linkedin.com/in/oluwakemi-adeleke/"
+          rel="noreferrer"
+          target="_blank"
+        >
+          LINKEDIN
+        </a>
+        <a href="mailto:hello@kemiadeleke.com" rel="noreferrer" target="_blank">
+          EMAIL ADDRESS
+        </a>
+        <a
+          href="https://www.behance.net/oluwakemiolivia"
+          rel="noreferrer"
+          target="_blank"
+        >
+          BEHANCE
+        </a>
       </section>
     </Wrapper>
   );

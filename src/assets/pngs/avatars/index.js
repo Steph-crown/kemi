@@ -6,6 +6,4 @@ import five from "./5.png";
 import six from "./6.png";
 import seven from "./7.png";
 
-const avatars = [one, two, three, four, five, six, seven];
-
-export default avatars;
+export const avatars = [one, two, three, four, five, six, seven];
