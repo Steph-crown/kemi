@@ -38,18 +38,21 @@ const Navbar = ({ darkMode, bgColor }) => {
                   <div className="line"></div>
                 </NavL>
               </NavListItem>
+
               <NavListItem>
                 <NavL to="/case-studies" darkMode={darkMode || isOpen}>
                   <span>case studies</span>
                   <div className="line"></div>
                 </NavL>{" "}
               </NavListItem>
+
               <NavListItem>
                 <NavL to="/design-process" darkMode={darkMode || isOpen}>
                   <span>design process</span>
                   <div className="line"></div>
                 </NavL>
               </NavListItem>
+
               <NavListItem>
                 <NavL to="/contact" darkMode={darkMode || isOpen}>
                   <span>contact</span>

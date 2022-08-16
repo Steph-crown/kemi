@@ -1,10 +1,9 @@
 // Imports
 import React from "react";
 import { Link } from "react-router-dom";
-import { TopicDetailsWrapper, NavL, NavListItem } from "./styles";
+import { TopicDetailsWrapper } from "./styles";
 import { svgs } from "../../assets/svgs";
 
-// Destructure imports
 const { DownIcon } = svgs;
 
 const TopicDetails = ({

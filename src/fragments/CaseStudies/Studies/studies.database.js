@@ -23,11 +23,7 @@ const listOfStudies = [
     topics: ["Branding", "UX Research", "UI Design", "Prototyping"],
     link: "/gxpay",
     desc: "A payment gateway solutions for merchants and customers.  It encompasses all the financial transactions, paying of bills, saving for a goal and getting returns on savings.",
-    tags: [
-      "MOBILE APPLICATION",
-      "100+ SCREENS",
-      "WIREFRAMES AND HI-FI DESIGNS",
-    ],
+    tags: ["WEB APPLICATION", "100+ SCREENS", "WIREFRAMES AND HI-FI DESIGNS"],
   },
   {
     thumbnail: proj3,

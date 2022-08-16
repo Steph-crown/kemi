@@ -20,9 +20,9 @@ const caseStudies = [
     color: "#131739",
     title: "ARTHUB MOBILE APPLICATION",
     shortDesc: "A NON-FUNGIBLE TOKEN MARKETPLACE.",
-    comingSoonBg: "rgba(42, 80, 167, 0.8)",
-    comingSoonColor: "rgba(12, 128, 244, 1)",
-    goalBg: "#F9A000",
+    comingSoonBg: "#686891",
+    comingSoonColor: "rgba(24, 24, 75, 1)",
+    goalBg: "#626294",
     bannerImage: arthubBanner,
     summary:
       "A non-fungible token marketplace mobile application for creators to display and sell their artworks. It is also an application for both creators and buyers. Buyers can place a bid and buy crypto collectibles and creators earn from listing their works for sale.",
@@ -243,7 +243,7 @@ const caseStudies = [
   },
   {
     name: "utext",
-    type: "mobile",
+    type: "web",
     color: "#373536",
     comingSoonBg: "#423D3D",
     comingSoonColor: "#FFFFFF",

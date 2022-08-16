@@ -97,11 +97,11 @@ const DesignProcess = () => {
               <span>UX DESIGN</span>
             </BannerHeaderText>
             <p className="topic__description">
-              Being cautious and preventing costly errors in advance, we
-              visualize your ideas using simple experimental models to assess
-              the idea viability and validate design solutions. We employ
-              user-testing to pinpoint improvement areas, adapt changes, and
-              ultimately release the right product for your brand.
+              Being cautious and preventing costly errors in advance, I
+              visualize the client’s ideas using simple experimental models to
+              assess the idea viability and validate design solutions. I also
+              employ user-testing to pinpoint improvement areas, adapt changes,
+              and ultimately release the right product for the brand.
             </p>
           </ProcessTopicWrapper>
 

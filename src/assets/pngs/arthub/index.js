@@ -23,6 +23,13 @@ import twentytwo from "./22.png";
 import twentythree from "./23.png";
 import twentyfour from "./24.png";
 
+import twentyfive from "./25.png";
+import twentysix from "./26.png";
+import twentyseven from "./27.png";
+import twentyeight from "./28.png";
+import twentynine from "./2.png";
+import thirty from "./30.png";
+
 const arthubImages = [
   one,
   two,
@@ -48,6 +55,12 @@ const arthubImages = [
   twentytwo,
   twentythree,
   twentyfour,
+  twentyfive,
+  twentysix,
+  twentyseven,
+  twentyeight,
+  twentynine,
+  thirty,
 ];
 
 export default arthubImages;
