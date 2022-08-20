@@ -128,7 +128,11 @@ export const NavL = styled(NavLink).attrs({
   }
 `;
 
-export const LetsTalkButton = styled.button`
+export const LetsTalkButton = styled.a.attrs({
+  href: "mailto:hello@kemiadeleke.com",
+  target: "_blank",
+  rel: "noreferrer",
+})`
   align-items: center;
   display: none;
   position: relative;
@@ -210,7 +214,11 @@ export const NavDropdown = styled.section.attrs({
   }
 `;
 
-export const MobileLetsTalkButton = styled.button`
+export const MobileLetsTalkButton = styled.a.attrs({
+  href: "mailto:hello@kemiadeleke.com",
+  target: "_blank",
+  rel: "noreferrer",
+})`
   @media screen and (min-width: 960px) {
     display: none;
   }
