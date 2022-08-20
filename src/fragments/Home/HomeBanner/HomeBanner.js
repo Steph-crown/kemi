@@ -1,15 +1,19 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Flex, BannerWrapper, BannerHeaderText, PenButtonIcon } from "./styles";
 import { svgs } from "../../../assets/svgs";
+import { gsap } from "gsap";
+import useBannerAnimation from "../../../animations/banner-animation";
 
 // Destructure imports
 const { PenIcon } = svgs;
 
 const HomeBanner = () => {
+  const { bannerRef } = useBannerAnimation();
+
   return (
-    <BannerWrapper>
+    <BannerWrapper ref={bannerRef}>
       <section className="container__sub container_banner">
-        <Flex className="banner__flex">
+        <Flex className="banner__flex first__flex">
           <div>
             <BannerHeaderText>
               <span>c</span>
@@ -23,7 +27,7 @@ const HomeBanner = () => {
             </BannerHeaderText>
           </div>
         </Flex>
-        <Flex className="banner__flex">
+        <Flex className="banner__flex second__flex">
           <div>
             <BannerHeaderText>
               <span>P</span>
@@ -44,7 +48,7 @@ const HomeBanner = () => {
             </BannerHeaderText>
           </div>
         </Flex>
-        <Flex className="banner__flex">
+        <Flex className="banner__flex third__flex">
           <div>
             <BannerHeaderText>
               <span>d</span>

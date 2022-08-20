@@ -68,19 +68,22 @@ export const TextFlex = styled.div`
 `;
 
 export const BannerHeaderText = styled.h1`
-  transform: translate3d(0rem, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
-    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  /* transform: translate3d(0rem, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); */
+  display: flex;
+
   transform-style: preserve-3d;
   span {
     font-weight: 600;
+    display: block;
     font-size: 4.5rem;
     line-height: 5.7rem;
     color: var(--black);
     text-transform: uppercase;
     font-family: var(--font-made);
-    transform: translate3d(0px, 0px, 0rem) scale3d(1, 1, 1) rotateX(0deg)
-      rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-    transform-style: preserve-3d;
+    /* transform: translate3d(0px, 0px, 0rem) scale3d(1, 1, 1) rotateX(0deg)
+      rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); */
+    /* transform-style: preserve-3d; */
     opacity: 1;
 
     @media screen and (min-width: 768px) {

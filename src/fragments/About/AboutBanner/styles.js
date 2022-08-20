@@ -39,6 +39,15 @@ export const Flex = styled.div`
   position: relative;
   /* margin-bottom: 14px; */
 
+  & > div {
+    display: flex;
+    flex-wrap: wrap;
+
+    & > * {
+      margin-right: 40px;
+    }
+  }
+
   &.banner__flex {
     will-change: transform;
     transform: translate3d(0%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
@@ -74,9 +83,11 @@ export const TextFlex = styled.div`
 `;
 
 export const BannerHeaderText = styled.h1`
-  transform: translate3d(0rem, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
-    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  /* transform: translate3d(0rem, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); */
   transform-style: preserve-3d;
+  /* display: flex; */
+  flex-wrap: wrap;
   span {
     font-weight: 600;
     font-size: 4.5rem;
@@ -84,9 +95,9 @@ export const BannerHeaderText = styled.h1`
     color: var(--black);
     text-transform: uppercase;
     font-family: var(--font-made);
-    transform: translate3d(0px, 0px, 0rem) scale3d(1, 1, 1) rotateX(0deg)
-      rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-    transform-style: preserve-3d;
+    display: inline-block;
+
+    /* transform-style: preserve-3d; */
     opacity: 1;
 
     @media screen and (min-width: 768px) {
@@ -151,6 +162,10 @@ export const BannerHeaderText = styled.h1`
   @media screen and (min-width: 1200px) {
     max-width: 100%;
     margin: 90px 0 60px 0;
+  }
+
+  &:first-child {
+    margin-bottom: 0;
   }
 `;
 

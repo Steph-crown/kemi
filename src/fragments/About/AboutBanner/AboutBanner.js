@@ -6,18 +6,30 @@ import {
   ImageFlex,
 } from "./styles";
 import { pngs } from "../../../assets/pngs";
+import useBannerAnimation from "../../../animations/banner-animation";
 
 // Destructure imports
 const { kemi } = pngs;
 
 const AboutBanner = () => {
+  const { bannerRef } = useBannerAnimation();
+
   return (
-    <AboutBannerWrapper>
+    <AboutBannerWrapper ref={bannerRef}>
       <section className="container__sub container__banner">
-        <Flex className="banner__flex">
+        <Flex className="banner__flex first__flex">
           <div>
             <BannerHeaderText>
-              <span>About me</span>
+              <span>a</span>
+              <span>b</span>
+              <span>o</span>
+              <span>u</span>
+              <span>t</span>
+              <span> </span>
+            </BannerHeaderText>
+            <BannerHeaderText>
+              <span>m</span>
+              <span>e</span>
             </BannerHeaderText>
           </div>
         </Flex>
