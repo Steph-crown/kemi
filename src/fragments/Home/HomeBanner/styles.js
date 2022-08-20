@@ -98,7 +98,11 @@ export const BannerHeaderText = styled.h1`
   }
 `;
 
-export const PenButtonIcon = styled.button`
+export const PenButtonIcon = styled.a.attrs({
+  href: "mailto:hello@kemiadeleke.com",
+  target: "_blank",
+  rel: "noopener noreferrer",
+})`
   width: 40px;
   height: 40px;
   border-radius: 50%;

@@ -31,7 +31,9 @@ const HomeBanner = () => {
             </BannerHeaderText>
           </div>
           <PenButtonIcon>
+            {/* <a href="mailto:hello@kemiadeleke.com" > */}
             <PenIcon />
+            {/* </a> */}
           </PenButtonIcon>
           <div>
             <BannerHeaderText>

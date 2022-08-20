@@ -25,7 +25,7 @@ export const NavbarWrapper = styled.header`
     }
 
     .home {
-      position: relative;
+      /* position: relative; */
       z-index: 2;
     }
   }
