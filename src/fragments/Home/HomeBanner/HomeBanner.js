@@ -34,7 +34,7 @@ const HomeBanner = () => {
               <span>R</span>
             </BannerHeaderText>
           </div>
-          <PenButtonIcon>
+          <PenButtonIcon className="pen-icon">
             {/* <a href="mailto:hello@kemiadeleke.com" > */}
             <PenIcon />
             {/* </a> */}

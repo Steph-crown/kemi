@@ -15,6 +15,7 @@ import library from "./library.png";
 // case studies banner images
 import altrideBanner from "./altride.png";
 import arthubBanner from "./arthub.png";
+import utextBanner from "./utext.png";
 
 // avatar
 // import avatar from "./avatar.png";
@@ -46,6 +47,7 @@ export const pngs = {
   altrideBanner,
   arthubBanner,
   gxpayBanner,
+  utextBanner,
   // avatars,
 
   // case study images

@@ -1,13 +1,31 @@
-import { useEffect, useRef } from "react";
+import { useLayoutEffect, useRef } from "react";
 import { gsap } from "gsap";
+import { useEffect } from "react";
+import { useState } from "react";
 
 const useBannerAnimation = () => {
   const bannerRef = useRef();
   const q = gsap.utils.selector(bannerRef);
-  const timeline = gsap.timeline({});
+  const timeline = useRef();
+  const [lessThan900px, setLessThan900px] = useState(false);
 
   useEffect(() => {
-    timeline
+    console.log("Yooo");
+    const mql = window.matchMedia("(max-width: 900px)");
+
+    console.log("mql.matches", mql.matches);
+    mql.addEventListener("change", (event) => {
+      if (event.matches) {
+        console.log("Correct bro");
+      } else {
+        console.log("Incorrect bro");
+      }
+    });
+  });
+
+  useLayoutEffect(() => {
+    timeline.current = gsap
+      .timeline()
       .fromTo(
         q(".first__flex span"),
         {
@@ -21,7 +39,7 @@ const useBannerAnimation = () => {
         }
       )
       .fromTo(
-        q(".second__flex span"),
+        q([".second__flex span", ".pen-icon"]),
         {
           x: -40,
         },

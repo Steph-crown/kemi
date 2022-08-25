@@ -9,6 +9,7 @@ const {
   gxpayImages,
   utextImages,
   gxpayBanner,
+  utextBanner,
 } = pngs;
 
 const { Dot, Star, HollowDot } = svgs;
@@ -247,7 +248,7 @@ const caseStudies = [
     color: "#373536",
     comingSoonBg: "#423D3D",
     comingSoonColor: "#FFFFFF",
-    bannerImage: arthubBanner,
+    bannerImage: utextBanner,
     title: "UTEXT MOBILE APP",
     goalBg: "#407BFF",
     shortDesc: "A VOICE OVER INTERNET PROTOCOL PLATFORM.",
