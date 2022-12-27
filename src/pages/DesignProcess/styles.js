@@ -158,7 +158,7 @@ export const ProcessTopicWrapper = styled.section`
       font-weight: 400;
       line-height: 145%;
       font-size: 2rem;
-      margin-top: -16px;
+      margin-top: 8px;
       @media screen and (min-width: 720px) {
         font-size: 2.4rem;
         margin-top: 0;
