@@ -3,6 +3,7 @@ import { BannerHeaderText, Flex } from "../About/AboutBanner/styles";
 import { Capsule, CapsuleWrapper, PrinciplesWrapper } from "./styles";
 import { svgs } from "../../assets/svgs";
 import { Components } from "../../components";
+import { useNavigate } from "react-router";
 
 const { ArrowIcon } = svgs;
 const {
@@ -10,6 +11,11 @@ const {
 } = Components;
 
 const GuidingPrinciples = () => {
+  const navigate = useNavigate(),
+    handleBecomeClientClick = () => {
+      navigate("/contact");
+    };
+
   return (
     <PrinciplesWrapper>
       <section className="container__sub container__banner">
@@ -43,6 +49,7 @@ const GuidingPrinciples = () => {
               themeColor={"var(--black)"}
               smFull={true}
               width="272px"
+              onClick={handleBecomeClientClick}
             >
               BECOME A CLIENT
             </ArrowButton>

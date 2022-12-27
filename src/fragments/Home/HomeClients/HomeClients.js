@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { HomeClientsWrapper, Flex } from "./styles";
 import { Components } from "../../../components";
 import { svgs } from "../../../assets/svgs";
@@ -9,17 +10,21 @@ import { avatars } from "../../../assets/pngs/avatars";
 
 // Destructure imports
 const {
-  Buttons: { ArrowButton },
-} = Components;
-const { QuoteIcon, ArrowIcon } = svgs;
+    Buttons: { ArrowButton },
+  } = Components,
+  { QuoteIcon, ArrowIcon } = svgs;
 
 const HomeClients = () => {
   const [index, setIndex] = React.useState(0),
+    navigate = useNavigate(),
     handleBackClick = () => {
       setIndex((prev) => (prev - 1 < 0 ? testimonials.length - 1 : prev - 1));
     },
     handleForwardClick = () => {
       setIndex((prev) => (prev + 1 >= testimonials.length ? 0 : prev + 1));
+    },
+    handleBecomeClientClick = () => {
+      navigate("/contact");
     };
 
   return (
@@ -53,15 +58,14 @@ const HomeClients = () => {
             </section>
           </div>
           <div className="btn-group">
-            <a href="/#contact">
-              <ArrowButton
-                themeColor={"var(--blue)"}
-                smFull={true}
-                width="272px"
-              >
-                BECOME A CLIENT
-              </ArrowButton>
-            </a>
+            <ArrowButton
+              themeColor={"var(--blue)"}
+              smFull={true}
+              width="272px"
+              onClick={handleBecomeClientClick}
+            >
+              BECOME A CLIENT
+            </ArrowButton>
           </div>
         </Flex>
       </section>
