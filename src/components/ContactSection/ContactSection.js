@@ -2,12 +2,19 @@ import React from "react";
 import { ContactSectionWrapper, ContactFormWrapper } from "./styles";
 import { svgs } from "../../assets/svgs";
 import { pngs } from "../../assets/pngs";
+import { useNavigate, useLocation } from "react-router";
 
-// Destructure imports
 const { Gmail, Twitter, GoUpIcon, Linkedin, Behance, Copyright } = svgs;
 const { footerImage } = pngs;
 
 const ContactSection = () => {
+  const navigate = useNavigate(),
+    location = useLocation(),
+    handleGoUp = () => {
+      console.log("navigate", location.pathname);
+      navigate(`${location.pathname}#top`);
+    };
+
   return (
     <ContactSectionWrapper id="contact">
       <section className="container__sub">
@@ -59,7 +66,7 @@ const ContactSection = () => {
               Copyright 2022 . All right reserved
             </p>
           </footer>
-          <button className="up-btn">
+          <button className="up-btn" onClick={handleGoUp}>
             <GoUpIcon />
           </button>
         </div>

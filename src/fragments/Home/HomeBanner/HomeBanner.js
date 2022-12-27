@@ -12,7 +12,7 @@ const HomeBanner = () => {
 
   return (
     <BannerWrapper ref={bannerRef}>
-      <section className="container__sub container_banner">
+      <section className="container__sub container_banner" id="top">
         <Flex className="banner__flex first__flex">
           <div>
             <BannerHeaderText>
