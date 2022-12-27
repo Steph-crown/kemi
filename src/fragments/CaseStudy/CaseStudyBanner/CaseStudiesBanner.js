@@ -104,6 +104,7 @@ const Content = styled.div`
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 2222222;
     svg {
       margin-right: 6px;
       height: 16px;
